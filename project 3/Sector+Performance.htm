@@ -1,0 +1,3905 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--[if lt IE 7 ]> <html class="ie6" xml:lang="en" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" xml:lang="en" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" xml:lang="en" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+	<!-- <script type="text/javascript">
+    	if (top.location != location) {
+        	top.location.href = document.location.href;
+     	}
+	</script> -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    
+    
+    
+    
+	<meta name="keywords" content="stock market, stock markets, market performance, sector performance, market news" />
+	<meta name="description" content="View the current status of global stock markets and sectors, and access the latest news and research reports." />
+	<meta name="ereview" content="447623"/>
+    <!-- <script type="text/javascript" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/js/site.js"></script> -->
+    
+    
+		<!-- <link href="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/css/markets-sectors-change.css" rel="stylesheet" type="text/css" media="screen, print"/> -->	
+	    <!-- <link href="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/css/footer.css" rel="stylesheet" type="text/css" media="screen, print"/> -->	    
+	
+	
+	
+    
+    <!-- <link href="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/css/site_customize.css" rel="stylesheet" type="text/css" media="screen, print, projection"/> -->	   
+    <!-- <link href="https://www.fidelityfi.idmanagedsolutions.com/css/styles2.css" type="text/css" rel="stylesheet"> -->
+    <style type="text/css">
+        .previous {float: left; width: 75px;}
+        .next {float: right; width: 75px;}
+    </style>
+    
+    <!-- <script type="text/javascript" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/js/jquery-1.11.1.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/js/jquery-migrate-1.2.1.min.js"></script> -->
+    
+	
+	
+		<!-- <script type="text/javascript" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/js/site_overview.js"></script> -->
+	
+	
+	
+     
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script type="text/javascript">
+   var isAuthorized = false;
+</script> -->
+<!-- <script type="text/javascript">
+    var personal_server = "https://www.fidelity.com";
+    var pl_domain = "https://www.fidelity.com";
+    var ac_domain = "https://www.fidelity.com";        
+    var symbolTextBoxClicked = false;
+    var embeddedQuotesConfig = {};
+    var fmrProductid="eresearch";
+    
+    
+
+    
+    function popupHelpMS(url, width, height)
+    {
+    	openPopup(personal_server+url,width,height);
+    };
+</script> -->
+
+
+
+
+	<!-- <script type="text/javascript" src="https://www.fidelity.com/rct/2.0.0/dojo/dojo/dojo.xd.js" djconfig="parseOnLoad: true, isDebug:false"></script> -->
+	<!-- <script type="text/javascript" src="https://www.fidelity.com/rct/2.0.0/rct-ui/rct-ui.js"></script> -->
+
+
+
+
+
+	<!-- <script type="text/javascript" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/js/eresearch3.js"></script> -->
+    <!-- <script src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/js/fontcontroller.js" type="text/javascript"></script> -->
+    <!-- <script language="JavaScript" type="text/javascript" src="https://www.fidelity.com/research/equity/js/research.js"></script> -->
+    <!-- <script type="text/javascript" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/js/pagination.js"></script> -->
+	
+    <!-- <script type="text/javascript">
+    function popWin(theURL) {
+        var infowindow;
+        var infowindow2;
+        // Popup width and height are optional second and third parameters to this function
+        var theHeight = 420;
+        var theWidth = 245;
+        if (popWin.arguments.length == 3)
+        {
+            theWidth = popWin.arguments[1];
+            theHeight = popWin.arguments[2];
+        }
+        
+        var xPosition = 450;
+        var yPosition = 250;
+        if (popWin.arguments.length == 5)
+        {
+            theWidth = popWin.arguments[1];
+            theHeight = popWin.arguments[2];
+            xPosition = popWin.arguments[3];
+            yPosition = popWin.arguments[4];
+        }
+        
+        if(theWidth == 245) {
+            infowindow=window.open (theURL, 'infowindow','width='+theWidth+',height='+theHeight+',left='+xPosition+',top='+yPosition+',location=no,resizable=yes,menubar=no,status=no,toolbar=no,scrollbars=yes');
+            infowindow.opener=self;
+            infowindow.focus();
+        }
+        
+        if(theWidth == 617) {
+            infowindow2=window.open (theURL, 'infowindow2','width='+theWidth+',height='+theHeight+',left='+xPosition+',top='+yPosition+',location=no,resizable=yes,menubar=no,status=no,toolbar=no,scrollbars=yes');
+            infowindow2.opener=self;
+            infowindow2.focus();
+        }
+
+        if(theWidth == 740) {
+            infowindow2=window.open (theURL, 'infowindow2','width='+theWidth+',height='+theHeight+',left='+xPosition+',top='+yPosition+',location=no,resizable=yes,menubar=no,status=no,toolbar=no,scrollbars=yes');
+            infowindow2.opener=self;
+            infowindow2.focus();
+        }
+        
+        if(theWidth == 385) {
+        	wotswindow = window.open (theURL, 'wotswindow', 'width='+theWidth+',height='+theHeight+',left='+xPosition+',top='+yPosition+',location=no,resizable=yes,menubar=no,status=no,toolbar=no,scrollbars=yes');
+        	wotswindow.opener = self;
+        	wotswindow.focus();
+        }
+        
+        if(window.infowindow) {window.infowindow.close();}
+        if(window.infowindow2) {window.infowindow2.close();} 
+    }
+
+    function back() {       
+        window.history.back();
+    }
+
+    function refreshSelectedMarket(){
+    	var targetObj = dojo.query(".tab-section > ul > li.selected")[0];
+    	refreshMarket(targetObj, dojo.attr(targetObj, "param-market"));
+    }
+    
+    function refreshMarket(targetObj,selectedMarket){
+        var searchConditionObj = new Object();
+        var openedCharts = new Array();
+        var i = 0;
+        $("img").each(function(){
+	        var img = this;
+	        if($(img).attr("src").indexOf("close_button.png") != -1){
+	        	openedCharts[i++]=$(img).parent().parent().attr("id");
+	        }
+	    });
+        searchConditionObj.openedCharts = openedCharts;
+       
+    	// update the content of this tab
+		updateTabContent(targetObj, selectedMarket, searchConditionObj);
+
+		// update the label of this tab
+		updateTabLabel(targetObj, selectedMarket);
+
+
+    }
+    
+    function updateTabLabel(){
+    	var xhrArgs = {
+    		url:"/eresearch/markets_sectors/futureMarketChangePercent.jhtml",
+    		handleAs: "json",
+    		preventCache: true,
+    		load: function(data){
+    				var liObj = dojo.query("> li",dojo.query(".tab-section > ul")[0]);
+                    var maxMarketDate = "";
+    				for(var i = 0 ; i < 6 ; i++){
+    					var divobj = dojo.query("#changePercentDiv" + i, liObj[i])[0];
+    					dojo.removeClass(divobj, "loss");
+    					dojo.removeClass(divobj, "gain");
+    					dojo.removeClass(divobj, "no-data");
+                        /*if(dojo.hasClass(liObj[i], "selected")){
+                        	dojo.addClass(divobj, "no-data");
+    						divobj.innerHTML = "";
+    					}else{*/
+    						var tempValue = parseFloat(data.quotes[i].changePercent);
+        					if(tempValue == NaN){
+        						dojo.addClass(divobj, "no-data");
+        						divobj.innerHTML = "";
+        					}else if(tempValue == 0){
+        						dojo.addClass(divobj, "no-data");
+        						/*var numObj = new Number(tempValue);
+    	    					divobj.innerHTML = numObj.toFixed(2) + "%"; modify by John Zhong*/
+    	    					divobj.innerHTML ='<img width="10" height="9" title="" class="no-change" alt="" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/images/no_change.gif" complete="complete"/>';
+        					}else {
+    	    					if(data.quotes[i].changePercent.charAt(0) == '-'){
+    	        					dojo.addClass(divobj, "loss");
+    	        					/*var numObj = new Number(tempValue);
+    		    					divobj.innerHTML = numObj.toFixed(2) + "%";*/
+    		    					divobj.innerHTML ='<img width="10" height="9" title="" class="down-arrow" alt="" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/images/down_arrow.png" complete="complete"/>';
+    	    					} else {
+    	    						dojo.addClass(divobj, "gain");
+    	    						/*var numObj = new Number(tempValue);
+    		    					divobj.innerHTML = "+" + numObj.toFixed(2) + "%";*/
+    	    						divobj.innerHTML ='<img width="10" height="9" title="" class="up-arrow" alt="" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/images/up_arrow.png" complete="complete"/>';
+    	    					}
+        					}
+    					//}
+
+    					var currentMarketDate = data.quotes[i].dateTime;
+    					if(currentMarketDate != null && currentMarketDate != ""){
+    						var dateArray = currentMarketDate.split(" ");
+    						var timeArray = dateArray[1].split(":");
+    						var standardHour = "";
+    						var standardMinute = "";
+    						if(timeArray[0].length == 1){
+    							standardHour = "0" + timeArray[0];
+        					}else{
+        						standardHour = timeArray[0];
+            				}
+        					if(timeArray[1].length == 1){
+        						standardMinute = "0" + timeArray[1];
+                			}else{
+                				standardMinute = timeArray[1];
+                        	}
+                		    standardCrrentMarketDate = dateArray[0]+" "+dateArray[2]+" "+standardHour + ":" + standardMinute;
+    						if(maxMarketDate != ""){
+                                if(maxMarketDate < standardCrrentMarketDate){
+                                	maxMarketDate = standardCrrentMarketDate;
+                                }
+                            }else{
+                            	maxMarketDate = standardCrrentMarketDate;
+                            }
+            			}
+    				}
+    				var dateTimeFragment = maxMarketDate.split(" ");
+    				var timeForDisplay = "";
+    				if(dateTimeFragment[2].substring(0,1) == "0"){
+    					timeForDisplay = dateTimeFragment[2].substring(1);
+        			}else{
+        				timeForDisplay = dateTimeFragment[2];
+                	}
+    				var dateFragment = dateTimeFragment[0].split("-");
+    				var maxMarketDateForDisplay = timeForDisplay+" "+dateTimeFragment[1]+" ET "+dateFragment[1]+"/"+dateFragment[2]+"/"+dateFragment[0].substring(2);
+    				var quoteSpan = dojo.query("#usMarketAnchor > #futureMarketDatetime")[0];
+    				quoteSpan.innerHTML = "<p>LAST (% CHANGE) DELAYED AT LEAST 10 MINUTES, CLICK &quot;REFRESH&quot; TO UPDATE.</p><p>CURRENT QUOTE AS OF " + maxMarketDateForDisplay+"</p>";
+    		    
+    			},
+    		    error: function(error){
+    		        // Nothing to do
+    		    }
+    	    };
+    	    // Call the asynchronous xhrPost
+    	    var deferred = dojo.xhrGet(xhrArgs);
+    }
+    function updateTabContent(targetObj, selectedMarket,searchConditionObj){
+    	var textBlocks = dojo.query(".future-mkt-section .text-block");
+		for(var i = 0 ; i < 4 ; i++){
+			new WaitingLoader({element : textBlocks[i], showLoader : true}).start();
+		}
+		var graphObj = dojo.query(".market-graph");
+		new WaitingLoader({element : graphObj[0], showLoader : true}).start();
+		var serverBase = window.location.protocol + "\/\/" + window.location.host;
+       	var xhrArgs = {
+		    url:serverBase+"/eresearch/markets_sectors/markets_future.jhtml?topic=" + selectedMarket + "",
+		    handleAs: "text",
+		    preventCache: true,
+		    load: function(data){
+				dojo.query(".future-mkt-section")[0].innerHTML = data;
+				
+				if(selectedMarket == 'equity'){
+			    	currentTab = 'Equity';
+			    }else if(selectedMarket == 'fixedIncome'){
+			    	currentTab = 'Interest Rates';
+			    }else if(selectedMarket == 'forex'){
+			    	currentTab = 'ForeignExchnage';
+			    }else if(selectedMarket == 'energy'){
+			    	currentTab = 'Energy';
+			    }else if(selectedMarket == 'metals'){
+			    	currentTab = 'Metals';
+			    }else if(selectedMarket == 'agri'){
+			    	currentTab = 'Agriculture';
+			    }else{
+			    	currentTab = 'MarketsAll';
+			    }
+				checkedRadio = 'marketRodio';
+				//resetOverviewEnteroption(true); modify by John Zhong to delete research report
+				// register the event for refresh link.
+				$('#refreshButton').die("click");
+				$('#refreshButton').live("click",function() {
+					refreshMarket(targetObj,selectedMarket);
+				});
+				
+				addMetricsForRefreshLink($('#refreshButton'));
+			    $("img").each(function(){
+			        var id = this;
+			        if($(id).attr("src").indexOf("_button.png") != -1){
+			        	var newId = $(id).parent();
+			        	$(newId).unbind("click");
+			        	$(newId).bind("click",function(){
+			                swapImage(id);
+			            });
+			        }
+
+			    });
+				if(searchConditionObj != null){
+					collapseAll();
+					for(var i in searchConditionObj.openedCharts){
+						var openedChart = searchConditionObj.openedCharts[i];
+						if(openedChart != null){
+							var tr = dojo.byId(openedChart);
+							if(tr != null){
+								var td = dojo.query("td", tr)[0];
+								if(td != null){
+									var img = dojo.query("img", td)[0];
+									if(img != null){
+										swapImage(img);		
+									}
+								}
+							}
+						}
+					}
+					
+					/*if(searchConditionObj.marketCheckStatus == true){
+						dojo.byId("market").click();
+					} else {
+						dojo.byId("sector").click();
+					} 
+					dojo.byId("enter-option").selectedIndex=searchConditionObj.selectedMarketIndex;
+					changeFirm();
+					dojo.byId("firms").selectedIndex = searchConditionObj.selectedFirmIndex;
+					dojo.byId("timeframe").selectedIndex = searchConditionObj.selectedFrameIndex;modify by John Zhong to remove research report data*/
+				}
+		    },
+		    error: function(error){
+		        dojo.query(".future-mkt-section")[0].innerHTML = "<div class=\"market-graph-error\"><span class=\"error-msg\">Current market data is unavailable at this time. We apologize for any inconvenience.</span></div>";
+		    }
+	    };
+	    // Call the asynchronous xhrPost
+	    var deferred = dojo.xhrGet(xhrArgs);
+    }
+    
+    function changeMarket(targetObj, selectedMarket){
+        // check whether the target tab is current selected tab.
+		if(dojo.hasClass(targetObj, "selected")){
+			return false;
+		}
+		
+		// update the selected style of tab
+		var ulObj = dojo.query(".tab-section > ul");
+		dojo.query("li", ulObj[0]).forEach(function(node, index, arr){
+			if(dojo.hasClass(node, "selected")){
+				dojo.removeClass(node, "selected");
+			}
+		});
+		dojo.addClass(targetObj, "selected");
+		
+		// update the content of this tab
+		updateTabContent(targetObj, selectedMarket, null);
+
+		// update the label of this tab
+		updateTabLabel();
+	}
+
+    
+    
+    function addMetricsLinkEvent(divId) {
+    	if (_VS != null) {
+    		if (_VS.vs['lt'] && _VS.vs['lt']=="1") {
+    			var a = $('#'+divId+' a'), b = 0;
+    			for (b=0;b<_VS.L(a);b++) {
+    				_VS.EL(a[b],'mousedown',_VS.LT);
+    				_VS.EL(a[b], 'keydown', _VS.LT);
+    			}
+    		}
+    	}
+    }
+    
+    function addMetricsForRefreshLink(rlink) {
+    	if (_VS != null) {
+    		if (_VS.vs['lt'] && _VS.vs['lt']=="1") {
+    			_VS.EL(rlink,'mousedown',_VS.LT);
+				_VS.EL(rlink, 'keydown', _VS.LT);
+    		}
+    	}
+    }
+  
+    </script> -->	
+	<title>Stock Market & Sector Performance - Fidelity</title>	
+</head>
+<body class="mkt-sec-landing">
+
+
+
+<!-- landing view points css -->
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+<div class="mboxDefault"></div>
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+<!-- <script type="text/javascript">
+try{
+if (typeof Bootstrapper !== "object"){
+document.writeln('<scr'+'ipt type="text/javascript" src="https://nexus.ensighten.com/fidelity/prod/Bootstrap.js"></sc'+'ript>');
+}
+}catch(e){
+ console.log('no load bs');
+}
+</script> -->
+<!-- begin_nav -->
+    <!-- <link rel="stylesheet" href="https://www.fidelity.com/bin-public/060_www_fidelity_com/css/nav-07.18.min.css" type="text/css"> -->
+              <div class="mboxDefault">
+<!--[if lte IE 7 ]>    
+<div id="pgnb" class="pgnb ie ie7" data-nav-ver="12"> 
+<![endif]-->
+<!--[if IE 8 ]>
+<div id="pgnb" class="pgnb ie ie8  bm" data-nav-ver="12"> 
+<![endif]-->
+<!--[if IE 9 ]>
+<div id="pgnb" class="pgnb ie ie9  bm" data-nav-ver="12"> 
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<div id="pgnb" class="pgnb bm" data-nav-ver="12">
+<!--<![endif]-->
+    <div class="pbn" role="banner">
+        <div class="pnsn"><a href="#piNavSkipToContent" class="pnsl" id="pnsl">Skip to Main Content.</a></div> 
+        <a id="pnt" class="pnt" href="javascript:void(0)"><span class="pntstrp"><span class="off-screen">Site navigation</span></span></a>
+             <div class="pnld"><a target="_top" href="https://www.fidelity.com/?bar=p"><span class="screen-reader-only">Fidelity.com Home</span></a></div>
+        <div class="pntlt">
+<ul class="pntl pnlogout">
+		<li class="static "><a href="https://www.fidelity.com/customer-service/overview" target="_top" >Customer Service</a></li>
+		<li class="static "><a href="https://digital.fidelity.com/ftgw/digital/profile" target="_top">Profile</a></li>
+		<li class="static "><a href="https://www.fidelity.com/open-account/overview" target="_top" >Open An Account</a></li>
+		<li class="static "><a href="https://www.fidelity.com/customer-service/friendsandfamily3a" target="_top" ><span class="pi-nav-nowrap">Refer A</span> Friend</a></li>
+			<li class="pnls last-child"><a href="https://login.fidelity.com/ftgw/Fas/Fidelity/RtlCust/Login/Init?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage" target="_top" >Log In</a></li>
+</ul><ul class="pntl pnlogin">
+		<li class="static "><a href="https://www.fidelity.com/customer-service/overview" target="_top" >Customer Service</a></li>
+		<li class="static "><a href="https://digital.fidelity.com/ftgw/digital/profile" target="_top">Profile</a></li>
+		<li class="static "><a href="https://www.fidelity.com/open-account/overview" target="_top" >Open An Account</a></li>
+		<li class="static "><a href="https://www.fidelity.com/customer-service/friendsandfamily3a" target="_top" ><span class="pi-nav-nowrap">Refer A</span> Friend</a></li>
+			<li class="pnls last-child"><a href="https://login.fidelity.com/ftgw/Fidelity/RtlCust/Logout/Init?AuthRedUrl=https://www.fidelity.com/customer-service/customer-logout" target="_top">Log Out</a></li>
+</ul>        </div>
+        <div id="pns" class="pns" role="search">
+<!-- <form class="pnsm" method="get" action="https://search.fidelity.com/search/getSearchResults?question="> -->
+		<label for="nav-search-mobile" class="screen-reader-only">Search fidelity.com or get a quote</label>
+                <div class="pnst-container">
+		        <input id="nav-search-mobile" type="text" placeholder="Search or get a quote" class="pnst search-autocomplete" name="question"  maxlength="64">
+                </div>
+		<input type="submit" value="Search Site" class="pnss">
+	</form>        </div>
+    </div>
+    <div class="pnacr-wrapper"> <div class="pnacr"></div></div>
+    <div id="pnmm" class="pnmm" role="navigation" aria-label="Site Navigation">
+        <ul class="pnl1 pns-5">
+<li class="pnhs">
+	<div class="pnsh"><a class="pnshl" href="#" aria-haspopup="true" aria-expanded="false">Accounts &amp; Trade</a></div>
+	<div class="pnl2">
+		<ul>
+							<li class="pnlogout" tms="navLink"><a href="https://scs.fidelity.com/customeronly/portfolio.shtml" target="_top">Portfolio <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/oftop/portfolio#summary" target="_top" name="Link_1369248506220" id="Link_1369248506220">Portfolio</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://scs.fidelity.com/customeronly/accountposition.shtml" target="_top">Account <span class="pi-nav-nowrap">Positions <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/oftop/portfolio#positions" target="_top">Account <span class="pi-nav-nowrap">Positions</span></a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://scs.fidelity.com/customeronly/trade.shtml" target="_top">Trade <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/oftrade/EntrOrder?FRAME_LOADED=Y&amp;NAVBAR=Y" target="_top">Trade</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/trading/advanced-trading-tools/active-trader-pro/overview" target="_top">Active Trader Pro</a></li>
+							<li class="" tms="navLink"><a href="https://digital.fidelity.com/prgw/digital/guide-to-moving-money" target="_top">Transfer</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/ofcashmgmt/cashMgmtApp">Cash Management <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/ofcashmgmt/cashMgmtApp">Cash Management</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://billpayment.fidelity.com/ftgw/billpayment/PayBills" id="Link_1366018845877" target="_top" name="Link_1366018845877" >BillPay <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://billpayment.fidelity.com/ftgw/billpayment/PayBills" id="Link_1366018845877" target="_top" name="Link_1366018845877" >BillPay</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://digital.fidelity.com/ftgw/digital/emoney/home" target="_top" >Full View<span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://digital.fidelity.com/ftgw/digital/emoney/home" target="_top" >Full View</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://digital.fidelity.com/ftgw/digital/security/dashboard/view" target="_top" >Security Settings<span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://digital.fidelity.com/ftgw/digital/security/dashboard/view" target="_top" >Security Settings</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://scs.fidelity.com/customeronly/update-features.shtml" id="Link_1366018882368" target="_top" name="Link_1366018882368">Account Features <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://oltx.fidelity.com/ftgw/fbc/oftop/portfolio#Feature" id="Link_1366018882368" target="_top" name="Link_1366018882368">Account Features</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://statements.fidelity.com/ftgw/fbc/ofstatements/getStatementsList" id="Link_1366018909540" target="_top" name="Link_1366018909540" >Statements <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://statements.fidelity.com/ftgw/fbc/ofstatements/getStatementsList" id="Link_1366018909540" target="_top" name="Link_1366018909540" >Statements</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/tax-information/overview" target="_top">Tax Information</a></li>
+							<li class="dynamic-act-prof " data-dynamic-act-prof="D60>=59.5" tms="navLink"><a href="https://moneymovement.fidelity.com/ftgw/fbc/mm/mmRDCLanding" target="_top" >Retirement Distributions<span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+		</ul>
+			<ul class="offer-submenu">
+							<li class="" tms="navLink"><label>OFFER</label> <a href="https://rewards.fidelity.com/offers/ATP500free" target="_top">See our featured trading offer. Learn more.</a></li>
+			</ul>
+	</div>
+</li><li class="pnhs">
+	<div class="pnsh"><a class="pnshl" href="#" aria-haspopup="true" aria-expanded="false">Planning &amp; Advice</a></div>
+	<div class="pnl2">
+		<ul>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/what-we-offer/overview" >What We Offer</a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://myguidance.fidelity.com/ftgw/guidance/customer/guidanceLanding.go" >My Goals</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/financial-basics/overview" >Financial Basics</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/building-savings/overview" >Building Savings</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/wealth-management/overview" >Wealth Management</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/retirement-guidance/overview" >Retirement</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/life-events/overview" >Life Events</a></li>
+		</ul>
+	</div>
+</li><li class="pnhs">
+	<div class="pnsh"><a class="pnshl" href="#" aria-haspopup="true" aria-expanded="false">News &amp; Research</a></div>
+	<div class="pnl2">
+		<ul>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/news/overview" id="Link_1474659208719" name="Link_1474659208719" >News</a></li>
+							<li class="" tms="navLink"><a href="https://watchlists.fidelity.com/ftgw/watchlists/goto/retail/getWatchlist" target="_top" >Watch List <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="" tms="navLink"><a href="https://quotes.fidelity.com/ftgw/fbc/ofquotes/webxpress/get_quote" id="Link_1474659319682" name="Link_1474659319682" >Quotes</a></li>
+							<li class="" tms="navLink"><a href="https://alertable.fidelity.com/ftgw/alerts/GetAlertsSummary" target="_top" >Alerts <span class="pnlock pnlogout"><span class="screen-reader-only">Log In Required</span></span></a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/fund-screener/research.shtml" id="Link_1474659463496" name="Link_1474659463496" >Mutual Funds</a></li>
+							<li class="" tms="navLink"><a href="https://eresearch.fidelity.com/eresearch/landing.jhtml" target="_top">Stocks</a></li>
+							<li class="" tms="navLink"><a href="https://fixedincome.fidelity.com/ftgw/fi/FILanding" target="_top" >Fixed Income, Bonds &amp; CDs</a></li>
+							<li class="" tms="navLink"><a href="https://screener.fidelity.com/ftgw/etf/evaluator/goto/landing" target="_top" >ETFs</a></li>
+							<li class="" tms="navLink"><a href="https://researchtools.fidelity.com/ftgw/mloptions/goto/optionChain" target="_top">Options</a></li>
+							<li class="" tms="navLink"><a href="https://eresearch.fidelity.com/eresearch/goto/markets_sectors/landing.jhtml" target="_top" >Markets &amp; Sectors</a></li>
+							<li class="" tms="navLink"><a href="https://brokerage.fidelity.com/ftgw/brkg/ipo/calendar" target="_top" >IPOs</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/research-annuities/overview" target="_top" >Annuities</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/learning-center" id="Link_1474659825988" name="Link_1474659825988" >Learning Center</a></li>
+							<li class="pnlogout" tms="navLink"><a href="https://www.fidelity.com/go/notebook" id="Link_1474659859175" name="Link_1474659859175" >Notebook</a></li>
+							<li class="pnlogin" tms="navLink"><a href="https://dpcs.fidelity.com/ftgw/dpcs/notebook/#?channel=nav" target="_top">Notebook</a></li>
+		</ul>
+	</div>
+</li><li class="pnhs">
+	<div class="pnsh"><a class="pnshl" href="#" aria-haspopup="true" aria-expanded="false">Investment Products</a></div>
+	<div class="pnl2">
+		<ul>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/mutual-funds/overview" target="_top" >Mutual Funds</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/retirement-ira/overview" target="_top" >Retirement &amp; IRAs</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/trading/overview" id="Link_1474660590700" name="Link_1474660590700" >Trading</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/stock-trading/overview" id="Link_1474660631692" name="Link_1474660631692" >Stocks</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/fixed-income-bonds/overview" id="Link_1474660886252" name="Link_1474660886252" >Fixed Income, Bonds &amp; CDs</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/etfs/overview" target="_top" >ETFs</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/options-trading/overview" target="_top" >Options</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/sector-investing/overview" target="_top" >Sector Investing</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/cash-management/overview" target="_top" >Cash Management &amp; Credit Cards</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/managed-accounts/overview" target="_top" >Managed Accounts</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/managed-accounts/fidelity-go/overview" target="_top" >Fidelity Go</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/529-plans/overview" target="_top" >529 College Savings</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/annuities/overview" target="_top" >Annuities</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/life-insurance/overview" target="_top" >Life Insurance &amp; Long Term Care</a></li>
+		</ul>
+	</div>
+</li><li class="pnhs">
+	<div class="pnsh"><a class="pnshl" href="#" aria-haspopup="true" aria-expanded="false">Why Fidelity</a></div>
+	<div class="pnl2">
+		<ul>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/overview" id="Link_1474662025230" name="Link_1474662025230">The Fidelity Advantage</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/planning-advice" target="_top">Planning &amp; Advice</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/trading" target="_top">Trading</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/pricing-fees" target="_top">Straightforward Pricing</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/insights-tools" target="_top">Insights &amp; Tools</a></li>
+							<li class="" tms="navLink"><a href="https://www.fidelity.com/why-fidelity/security-protection" target="_top">Security &amp; Protection</a></li>
+		</ul>
+	</div>
+</li>        </ul><!-- pnl1 -->
+        <div class="pntlb">
+<ul class="pntl pnlogout">
+		<li class="static "><a href="https://www.fidelity.com/customer-service/overview" target="_top" >Customer Service</a></li>
+		<li class="static "><a href="https://digital.fidelity.com/ftgw/digital/profile" target="_top">Profile</a></li>
+		<li class="static "><a href="https://www.fidelity.com/open-account/overview" target="_top" >Open An Account</a></li>
+		<li class="static "><a href="https://www.fidelity.com/customer-service/friendsandfamily3a" target="_top" ><span class="pi-nav-nowrap">Refer A</span> Friend</a></li>
+			<li class="pnls last-child"><a href="https://login.fidelity.com/ftgw/Fas/Fidelity/RtlCust/Login/Init?AuthRedUrl=https://oltx.fidelity.com/ftgw/fbc/ofsummary/defaultPage" target="_top" >Log In</a></li>
+</ul><ul class="pntl pnlogin">
+		<li class="static "><a href="https://www.fidelity.com/customer-service/overview" target="_top" >Customer Service</a></li>
+		<li class="static "><a href="https://digital.fidelity.com/ftgw/digital/profile" target="_top">Profile</a></li>
+		<li class="static "><a href="https://www.fidelity.com/open-account/overview" target="_top" >Open An Account</a></li>
+		<li class="static "><a href="https://www.fidelity.com/customer-service/friendsandfamily3a" target="_top" ><span class="pi-nav-nowrap">Refer A</span> Friend</a></li>
+			<li class="pnls last-child"><a href="https://login.fidelity.com/ftgw/Fidelity/RtlCust/Logout/Init?AuthRedUrl=https://www.fidelity.com/customer-service/customer-logout" target="_top">Log Out</a></li>
+</ul>        </div>
+    </div>
+    <a name="piNavSkipToContent" id="piNavSkipToContent" tabindex="-1" class="off-screen"></a>
+</div>
+              </div>
+             <!-- <script type="text/javascript">
+               window.mboxCreate = window.mboxCreate || function (){};
+               mboxCreate("PI_Navbar");
+             </script> -->
+<!-- <script  type="text/javascript">
+var PIGlobalNav_WWWHOST = "https://www.fidelity.com";
+var PIGlobalNav_ACTIVEQUOTE_HOST = "https://quotes.fidelity.com";
+var PIGlobalNav_ERESEARCH_HOST = "https://eresearch.fidelity.com";
+var PIGlobalNav_RESEARCHTOOLS_HOST ="https://researchtools.fidelity.com";
+var PGNBProperties = {
+fadeInTime : 4000 ,
+menuDelayTime : 400 
+}
+</script> -->
+<!-- <script src="https://www.fidelity.com/bin-public/060_www_fidelity_com/js/nav-07.18.min.js" type="text/javascript"></script> -->
+<!-- end_nav -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+	
+	
+	#main-page {
+	    display: block;
+	}
+	#print-page {
+	    display: none;
+	}
+	
+
+</style>
+<!-- <script type="text/javascript">
+	var newwindow;
+	function openWin(url){
+		var width = 810;
+		var height = 795;
+		var left = 80;
+		var top = 80;
+		var scrollbar = 'scrollbars=yes';
+		if(openWin.arguments.length > 1){
+			width = openWin.arguments[1];
+			height = openWin.arguments[2];
+		}
+		if(openWin.arguments.length > 3){
+			left = openWin.arguments[3];
+			top = openWin.arguments[4];
+			scrollbar = 'scrollbars=no';
+			if (screen.width <= 800){
+				top=19;
+				left=309;
+			}
+		}
+		if(!newwindow || newwindow.closed){
+			newwindow = window.open(url,'newwindow','resizable=no,' + scrollbar + ',menubar=no,toolbar=no,width=' + width + ',height=' + height + ',left=' + left + ',top=' + top + ',screenX=20,screenY=20');
+		}
+		else{
+			newwindow.location.replace(url);
+		}
+		if (newwindow != null) {
+			newwindow.focus();
+		}
+	} 
+
+	function printPage(){
+		var printUrl = window.location + (window.location.search.length > 0 ?  '&output=print' : '?&output=print');
+		openWin(printUrl);
+	}
+</script> -->
+
+
+
+<div class="layout-breadcrumb-region" >
+	<div class="breadcrumb-section">
+		<div class="left-col">
+			<section>
+				<div class="breadcrumb"> <span class="off-screen">You are here: </span>
+					<ul>
+		        		<li class="bold"><a href="https://www.fidelity.com">Home</a></li>
+		        		<li><span class="research">Research </span></li>
+		        		<li class="last-item"><a href="/eresearch/markets_sectors/landing.jhtml">Markets &amp; Sectors</a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<div class="right-col">
+			<section>
+			
+				
+				<div class="overviewdisclaimer">
+					
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+					<span id="overviewdisclaimer">Content and data provided by various third parties and Fidelity &ndash; 
+	<a class="first"  href="https://www.fidelity.com/terms-of-use#third" target="_blank">Terms of Use</a>
+</span>
+				</div>
+				
+				
+		     
+			</section>
+		</div>
+	</div>
+</div>
+
+
+<div class="layout-content-region">
+	<div class="maincontent" id="contentContainer">
+	<div class="left-content">
+		<div class="toc-wrapper">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <link href="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/css/toc.css" rel="stylesheet" type="text/css" media="screen, print"/> -->
+
+
+
+
+
+
+<!-- <script>
+var newwindow;
+function openWinTOC(url){
+	var width = 810;
+	var height = 795;
+	var left = 80;
+	var top = 80;
+	var scrollbar = 'scrollbars=yes';
+	if(openWinTOC.arguments.length > 1){
+		width = openWinTOC.arguments[1];
+		height = openWinTOC.arguments[2];
+	}
+	if(openWinTOC.arguments.length > 3){
+		left = openWinTOC.arguments[3];
+		top = openWinTOC.arguments[4];
+		scrollbar = 'scrollbars=no';
+		if (screen.width <= 800){
+			top=19;
+			left=309;
+		}
+	}
+	if(!newwindow || newwindow.closed){
+		newwindow = window.open(url,'newwindow','resizable=yes,' + scrollbar + ',menubar=no,toolbar=no,width=' + width + ',height=' + height + ',left=' + left + ',top=' + top + ',screenX=20,screenY=20');
+	}
+	else{
+		newwindow.location.replace(url);
+	}
+	newwindow.focus();
+}
+
+function openWinCale(url){
+	
+	var width = 810;
+	var height = 795;
+	var left = 80;
+	var top = 80;
+	var scrollbar = 'scrollbars=yes';
+	if(openWinCale.arguments.length > 1){
+		width = openWinCale.arguments[1];
+		height = openWinCale.arguments[2];
+	}
+	if(openWinCale.arguments.length > 3){
+		left = openWinCale.arguments[3];
+		top = openWinCale.arguments[4];
+		scrollbar = 'scrollbars=no';
+		if (screen.width <= 800){
+			top=19;
+			left=309;
+		}
+	}
+	if(!newwindow || newwindow.closed){
+		newwindow = window.open(url,'newwindow','resizable=yes,' + scrollbar + ',menubar=no,toolbar=no,width=' + width + ',height=' + height + ',left=' + left + ',top=' + top + ',screenX=20,screenY=20');
+	}
+	else{
+		newwindow.location.replace(url);
+	}
+	if (newwindow != null) {
+		newwindow.focus();
+	}
+	
+}
+</script> -->
+<div id="Fidelity">
+	
+	<div class="left-form-box">
+	   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form onSubmit="return onSymbolFormSubmit(this);" name="EnterASymbolForm" target="_top" action="https://eresearch.fidelity.com/eresearch/goto/evaluate/snapshot.jhtml" id="search" method="post"> -->
+    <h3>
+        <label for="symbol">Enter Name or Symbol</label>
+    </h3>
+    <input type="text" id="symbol" name="symbols" autocomplete="OFF" onfocus="symbolTextBoxClicked=true" onkeypress="symbolTextBoxClicked=true" value="" size="5" maxlength="20" accesskey="5" class="ofTextInput ofMultipleInputs" title="Enter a Symbol" />
+    <input type="submit" id="rRDG" value="Go" class="go-button"/><br/>
+    <div class="acResults" id="resultPane"></div>
+    <div class="acError" id="errorPane"></div>
+    <a id="rRC" href="javascript:openPopup('https://quotes.fidelity.com/webxpress/popup_lookup.phtml', 454, 491, 478, 133)">Find Symbol</a>        
+</form>
+
+  
+	</div>
+	<div class="toc">
+	     <div class="navhead"><h2>Markets &amp; Sectors</h2> </div>
+	      
+	    <div class="navcontent">
+	     <ul>
+			<li class="selected"><a href="https://eresearch.fidelity.com/eresearch/markets_sectors/landing.jhtml">Overview</a></li>
+		</ul>
+		<h3>Markets</h3>
+		<ul class="ul_usMarket">
+		<li id="li_usMarkets" class="toc-item"><a href="https://eresearch.fidelity.com/eresearch/markets_sectors/landing.jhtml?linkpage=usmarkets#usMarketAnchor" onclick="">U.S. Markets</a></li>		
+			
+					
+					
+						<li ><a href="javascript:openWinUSEconomicCal('https://fidelity-fcm.econoday.com/byweek.asp?cust=fidelity');">U.S. Economic Calendar</a></li>
+					
+			
+		</ul>
+		<ul class="market-list"></ul>						
+		<ul>
+			<li class="toc-item"><a href="https://eresearch.fidelity.com/eresearch/markets_sectors/global/landing.jhtml?viewType=map">Global Markets</a></li>
+			<li class="toc-item"><a href="https://eresearch.fidelity.com/eresearch/markets_sectors/global/landing.jhtml?overviewType=Americas&viewType=map&mapType=NorthAmerica">Americas</a></li>
+			<li class="toc-item"><a href="https://eresearch.fidelity.com/eresearch/markets_sectors/global/landing.jhtml?overviewType=EMEA&viewType=map&mapType=Europe">EMEA</a></li>
+			<li class="toc-item"><a href="https://eresearch.fidelity.com/eresearch/markets_sectors/global/landing.jhtml?overviewType=AsiaPacific&viewType=map&mapType=Asia">Asia-Pacific</a></li>
+			<li ><a href="javascript:openWinCale('https://fidelity-fcm.econoday.com/byweek.asp?cust=fidelity-global');">Global Economic Calendar</a></li>
+		</ul>
+		<h3>U.S. Sectors &amp; Industries</h3>
+		<ul>
+			<li class="toc-item"><a href="https://eresearch.fidelity.com/eresearch/markets_sectors/sectors/sectors_in_market.jhtml">Sectors &amp; Industries Overview</a></li>			
+		</ul>
+		
+		<h3>News &amp; Reports</h3>
+		<ul class="last">
+			<li class="toc-item"><a href="https://eresearch.fidelity.com/eresearch/markets_sectors/news/overview.jhtml">U.S. Markets</a></li>
+			<li class="toc-item"><a href="https://eresearch.fidelity.com/eresearch/markets_sectors/news/global_overview.jhtml">Global Markets</a></li>
+			<li class="toc-item"><a href="https://research2.fidelity.com/fidelity/markets_sectors/search.asp">Reports Search</a></li>
+		</ul>
+	   
+	    </div>
+	</div>
+</div>
+
+    <!-- <script type="text/javascript" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/js/autocomplete.js"></script> -->
+
+
+		</div>
+	</div>
+	<div class="right-content">
+	<div class="stock-ticker stock-ticker-layout stock-ticker-margin">
+	     <span fmr-attach-component="fmr.qnr.components.MarketBar"></span>
+	</div>
+		<div class="page-title">
+			<h1>Stock Market & Sector Performance</h1>
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+	<p class="align-right bold">
+		<span>Not a Fidelity customer?&nbsp;</span><br><a href="https://guest.fidelity.com/GA/signup">Try our research for free without opening an account.</a>
+	</p>
+
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+ 
+
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+$(document).ready(function() {
+	// update the label of tab
+	updateTabLabel();
+	
+});
+</script> -->
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script type="text/javascript">
+
+function refreshGMP(){
+	new WaitingIndicator({element : dojo.byId("GMP_div"), showLoader : true, smallIcon:false}).start();
+	var xhrArgs = {
+    		url:"/eresearch/markets_sectors/refreshGMP.jhtml",
+    		handleAs: "text",
+    		preventCache: true,
+    		load: function(data){
+    				dojo.byId("GMP_div").innerHTML = data;
+    		    },
+    		    error: function(error){
+    		    	dojo.byId("GMP_div").innerHTML = "We're sorry. This content is temporarily unavailable. Please try again later.";
+    		    }
+    	    };
+    // Call the asynchronous xhrPost
+    var deferred = dojo.xhrGet(xhrArgs);
+}
+</script> -->
+<div id="GMP_div" class="ms-global-div">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="heading-wrapper">
+	<div class="heading-left"> 
+		<h2>Global Markets Performance</h2>
+		<span class="time-stamp">
+			
+				
+				
+					AS OF 07:09 PM ET 06/24/2019
+				
+			
+		</span>
+		<a href="javascript:void(0);" onclick="javascript:refreshGMP();">Refresh</a>
+	</div>
+<div class="heading-right"><a href="/eresearch/markets_sectors/global/landing.jhtml?viewType=map"><strong>Research Global Markets</strong></a></div>
+</div>
+<div class="global-data-div">
+		
+			
+		
+		
+		
+		
+			<div class="global-data ">
+			<h3>
+				<a href="/eresearch/markets_sectors/global/landing.jhtml?overviewType=Americas&viewType=map">Americas</a>
+                
+                
+				  
+			</h3>
+			
+			<table>
+				<colgroup>
+					<col class="col1">
+					<col class="col2">
+				</colgroup>
+				<tfoot>
+					<tr>
+						<td colspan="2"><a href="/eresearch/markets_sectors/global/landing.jhtml?overviewType=Americas&viewType=map">Research Americas by Country</a></td>
+					</tr>
+				</tfoot>
+				<tbody>
+				
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=Americas&countryCode=US&symbol=.SPX">S&#38;P&#032;500</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+							
+							
+						
+						<span class="negative-value">&#045; 0&#046;17&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=Americas&countryCode=US&symbol=.IXIC">NASDAQ</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+							
+							
+						
+						<span class="negative-value">&#045; 0&#046;32&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=Americas&countryCode=US&symbol=.DJI">DJIA</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+							
+							
+						
+						<span class="positive-value">&#043; 0&#046;03&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=Americas&countryCode=CA&symbol=.CADOW">Canada</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+						
+						<span class="unchange-value"> 0&#046;00&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=Americas&countryCode=CL&symbol=.CLDOW">Chile</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+						
+						<span class="unchange-value"> 0&#046;00&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=Americas&countryCode=MX&symbol=.MXDOW">Mexico</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+						
+						<span class="unchange-value"> 0&#046;00&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				</tbody>
+			</table>
+			
+			
+		</div>
+		
+		
+		
+		
+			<div class="global-data ">
+			<h3>
+				<a href="/eresearch/markets_sectors/global/landing.jhtml?overviewType=EMEA&viewType=map">EMEA</a>
+                
+                
+				  
+			</h3>
+			
+			<table>
+				<colgroup>
+					<col class="col1">
+					<col class="col2">
+				</colgroup>
+				<tfoot>
+					<tr>
+						<td colspan="2"><a href="/eresearch/markets_sectors/global/landing.jhtml?overviewType=EMEA&viewType=map">Research EMEA by Country</a></td>
+					</tr>
+				</tfoot>
+				<tbody>
+				
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							      			<a href="/eresearch/markets_sectors/global/landing.jhtml?overviewType=EMEA&viewType=map&mapType=Europe">Eurozone</a>
+							       
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+							
+							
+						
+						<span class="negative-value">&#045; 0&#046;19&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=EMEA&countryCode=FR&symbol=.FCHI">France</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+							
+							
+						
+						<span class="negative-value">&#045; 0&#046;12&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=EMEA&countryCode=DE&symbol=.DEDOW">Germany</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+						
+						<span class="unchange-value"> 0&#046;00&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=EMEA&countryCode=IT&symbol=.ITDOW">Italy</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+						
+						<span class="unchange-value"> 0&#046;00&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=EMEA&countryCode=GB&symbol=.FTSE">United&#032;Kingdom</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+							
+							
+						
+						<span class="positive-value">&#043; 0&#046;12&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=EMEA&countryCode=ZA&symbol=.ZADOW">South&#032;Africa</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+						
+						<span class="unchange-value"> 0&#046;00&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				</tbody>
+			</table>
+			
+			
+		</div>
+		
+		
+		
+		
+		 
+		
+			<div class="global-data last&#045;spacing">
+			<h3>
+				<a href="/eresearch/markets_sectors/global/landing.jhtml?overviewType=AsiaPacific&viewType=map">Asia&#045;Pacific</a>
+                
+                
+				  
+			</h3>
+			
+			<table>
+				<colgroup>
+					<col class="col1">
+					<col class="col2">
+				</colgroup>
+				<tfoot>
+					<tr>
+						<td colspan="2"><a href="/eresearch/markets_sectors/global/landing.jhtml?overviewType=AsiaPacific&viewType=map">Research Asia&#045;Pacific by Country</a></td>
+					</tr>
+				</tfoot>
+				<tbody>
+				
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=AsiaPacific&countryCode=AU&symbol=.DJAU">Australia</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+						
+						<span class="unchange-value"> 0&#046;00&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=AsiaPacific&countryCode=CN&symbol=.DJSH">China</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+							
+							
+						
+						<span class="positive-value">&#043; 0&#046;23&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=AsiaPacific&countryCode=HK&symbol=.HKDOW">Hong&#032;Kong</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+						
+						<span class="unchange-value"> 0&#046;00&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=AsiaPacific&countryCode=JP&symbol=.N225">Japan</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+						
+						<span class="unchange-value"> 0&#046;00&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=AsiaPacific&countryCode=NZ&symbol=.NZDOW">New&#032;Zealand</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+							
+							
+						
+						<span class="negative-value">&#045; 0&#046;06&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				
+					<tr>
+						<th scope="row">
+							
+							       
+							        
+							       
+							       			<a href="/eresearch/markets_sectors/global/country.jhtml?overviewType=AsiaPacific&countryCode=SG&symbol=.SGDOW">Singapore</a>
+							       
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							
+							
+						</th>
+						<td>
+						
+							
+							
+							
+						
+						<span class="unchange-value"> 0&#046;00&#037;</span>	
+						</td>
+						
+					</tr>
+					
+				</tbody>
+			</table>
+			
+			
+		</div>
+		
+		
+</div>
+</div>
+
+<div class="inner-content">
+	<div class="inner-left-content">
+		<div class="content-left market-performance" >
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="heading">
+	<h2>U.S. Markets Performance <a onclick="javascript:openPopup('https://www.fidelity.com//webcontent/ap010098-etf-content/19.06.0/help/research/learn_er_markets_sectors_news_analysis.shtml#canigetcurrentandhistoricalmarketperformanceinformationforfutures',420,450);return false;" href="https://www.fidelity.com//webcontent/ap010098-etf-content/19.06.0/help/research/learn_er_markets_sectors_news_analysis.shtml#whatusfuturesmarketsdataisavailable"><img border="0" alt="Help for U.S. Futures Markets" title="Help for U.S. Markets Performance" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/images/question_mark.png"/></a></h2>
+	<br>
+	<div id="usMarketAnchor" class="usMarketAnchor"><span id="futureMarketDatetime" class="byline"></span></div>
+</div>
+<div class="market-chart-div">
+	<div class="tab-section">
+		<ul>
+			<li class="first-child selected" onclick="javascript:changeMarket(this, 'equity');" param-market="equity"><a
+				href="javascript:void(0);"><span><strong>Equity</strong>
+						<div id="changePercentDiv0" class="no-data">&nbsp; &nbsp;</div>
+				</span><span class="off-screen">-selected</span></a></li>
+			<li onclick="javascript:changeMarket(this, 'fixedIncome');" param-market="fixedIncome"><a
+				href="javascript:void(0);"><span><strong>Fixed
+						Income</strong>
+						<div id="changePercentDiv1" class="no-data">&nbsp; &nbsp;</div>
+				</span></a></li>
+			<li onclick="javascript:changeMarket(this, 'forex');" param-market="forex"><a
+				href="javascript:void(0);"><span><strong>Forex</strong>
+						<div id="changePercentDiv2" class="no-data">&nbsp; &nbsp;</div>
+				</span></a></li>
+			<li onclick="javascript:changeMarket(this, 'energy');" param-market="energy"><a
+				href="javascript:void(0);"><span><strong>Energy</strong>
+						<div id="changePercentDiv3" class="no-data">&nbsp; &nbsp;</div>
+				</span></a></li>
+			<li onclick="javascript:changeMarket(this, 'metals');" param-market="metals"><a
+				href="javascript:void(0);"><span><strong>Metals</strong>
+						<div id="changePercentDiv4" class="no-data">&nbsp; &nbsp;</div>
+				</span></a></li>
+			<li class="last-child" onclick="javascript:changeMarket(this, 'agri');" param-market="agri"><a
+				href="javascript:void(0);"><span><strong>Agriculture</strong>
+						<div id="changePercentDiv5" class="no-data">&nbsp; &nbsp;</div>
+				</span></a></li>
+		</ul>
+	</div>
+</div>
+<div class="tab-content-div future-mkt-section">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+<div class="market-graph">
+	
+		
+			<!-- <script type="text/javascript">
+    if (typeof $ == 'undefined') {
+        var jQuerySrc = '//www.fidelityfi.idmanagedsolutions.com/js/jquery-1.8.2.min.js';
+        document.write("<script type=\"text/javascript\" src=\"" + jQuerySrc + "\"></" + "script>");
+    }
+    var decimal = 2;
+    var BASE_URL = '//www.fidelityfi.idmanagedsolutions.com';
+    var idNotationList = 'XX:10099650,XX:10101039,XX:9945521,XX:13368049';
+    var chartUrl = '//www.fidelityfi.idmanagedsolutions.com/charts/futuremarkets/quote.chart';
+</script> -->
+<!-- <script src="//www.fidelityfi.idmanagedsolutions.com/js/markets.js" type="text/javascript"></script> -->
+<!-- MODULE START (commodities module)-->
+<div class="idc-commoditiescontent">
+    <div class="idc-mininav"
+         style="border-left:#d1dae3 1px solid; border-right:#d1dae3 1px solid; padding-left: 12px; padding-bottom: 1px !important; padding-top: 7px;">
+        <ul>
+            <li class="idc-first"><a href="javascript:void(0);" onclick="expandAll()">Expand All</a></li>
+            <li class="idc-no-border">|</li>
+            <li><a href="javascript:void(0);" onclick="collapseAll()">Collapse All</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div><!--  END idc-mininav Div-->
+
+    <div class="idc-commoditiesDate">
+        <table>
+            <tbody>
+            <tr>
+                <th colspan="2" class="idc-th-contract nopaddingbt">
+                    Blended Contracts
+                </th>
+                <th class="idc-th-last idc-right-align nopaddingbt">
+                    Last (Change) <a href="javascript:void(0);" id="refreshButton">Refresh</a>
+                </th>
+                <th class="idc-th-prior idc-right-align nopaddingbt">
+                    Prior Date*
+                </th>
+                <th class="idc-th-onemonth idc-right-align nopaddingbt">
+                    1 Month*
+                </th>
+                <th class="idc-th-oneyear idc-right-align nopaddingbt">
+                    <span class="padding7right"> 1 Year*</span>
+                </th>
+            </tr>
+                                <tr class="idc-row-select" id="10099650">
+                        <td valign="top" style="width:0px;padding-right: 7px !important; margin-right: 0px;"
+                            class="idc-td-contract">
+                            <img src="//www.fidelityfi.idmanagedsolutions.com/images/close_button.png" height="12" width="12"/>
+                        </td>
+                        <td style="width:90px;" class="td-symbol">
+                            S&P 500 <br/>(E-Mini)                        </td>
+                        <td valign="top" class="idc-td-last idc-right-align"
+                            id="idc-td-last10099650">
+                            2,947.00                            <span class="idc-changedown">
+                                (-8.75                                , -0.30%)
+                            </span>
+                        </td>
+                        <td valign="top" class="idc-td-prior idc-right-align"
+                            id="idc-td-prior10099650">
+                            2,955.75*
+                        </td>
+                        <td valign="top" class="idc-th-onemonth idc-right-align"
+                            id="idc-td-onemonth10099650">
+                            2,866.00                        </td>
+                        <td valign="top" class="idc-td-oneyear idc-right-align"
+                            id="idc-td-oneyear10099650">
+                        <span class="padding7right">
+                            2,752.50                        </span>
+                        </td>
+                    </tr>
+                    <tr                             id="img_10099650">
+                        <td id="10099650" colspan="6"
+                            style="padding:0px !important; margin: 0px !important;">
+                            <img id="imgs_10099650"
+                                 src="//www.fidelityfi.idmanagedsolutions.com/charts/futuremarkets/quote.chart?ID_NOTATION=10099650&LAST=2947&DECIMAL=2&WIDTH=502"
+                                 height="207"/>
+                        </td>
+                    </tr>
+                                        <tr class="idc-row-contract" id="10101039">
+                        <td valign="top" style="width:0px;padding-right: 7px !important; margin-right: 0px;"
+                            class="idc-td-contract">
+                            <img src="//www.fidelityfi.idmanagedsolutions.com/images/open_button.png" height="12" width="12"/>
+                        </td>
+                        <td style="width:90px;" class="td-symbol">
+                            Nasdaq 100 <br/>(E-mini)                        </td>
+                        <td valign="top" class="idc-td-last idc-right-align"
+                            id="idc-td-last10101039">
+                            7,723.61                            <span class="idc-changedown">
+                                (-21.64                                , -0.28%)
+                            </span>
+                        </td>
+                        <td valign="top" class="idc-td-prior idc-right-align"
+                            id="idc-td-prior10101039">
+                            7,745.25*
+                        </td>
+                        <td valign="top" class="idc-th-onemonth idc-right-align"
+                            id="idc-td-onemonth10101039">
+                            7,464.00                        </td>
+                        <td valign="top" class="idc-td-oneyear idc-right-align"
+                            id="idc-td-oneyear10101039">
+                        <span class="padding7right">
+                            7,237.75                        </span>
+                        </td>
+                    </tr>
+                    <tr  style="display:none"                              id="img_10101039">
+                        <td id="10101039" colspan="6"
+                            style="padding:0px !important; margin: 0px !important;">
+                            <img id="imgs_10101039"
+                                 src="//www.fidelityfi.idmanagedsolutions.com/charts/futuremarkets/quote.chart?ID_NOTATION=10101039&LAST=7723.61&DECIMAL=2&WIDTH=502"
+                                 height="207"/>
+                        </td>
+                    </tr>
+                                        <tr class="idc-row-contract" id="9945521">
+                        <td valign="top" style="width:0px;padding-right: 7px !important; margin-right: 0px;"
+                            class="idc-td-contract">
+                            <img src="//www.fidelityfi.idmanagedsolutions.com/images/open_button.png" height="12" width="12"/>
+                        </td>
+                        <td style="width:90px;" class="td-symbol">
+                            DJIA ($5) <br/>(E-Mini)                        </td>
+                        <td valign="top" class="idc-td-last idc-right-align"
+                            id="idc-td-last9945521">
+                            26,760.00                            <span class="idc-changedown">
+                                (-2.00                                , -0.01%)
+                            </span>
+                        </td>
+                        <td valign="top" class="idc-td-prior idc-right-align"
+                            id="idc-td-prior9945521">
+                            26,762.00*
+                        </td>
+                        <td valign="top" class="idc-th-onemonth idc-right-align"
+                            id="idc-td-onemonth9945521">
+                            25,875.00                        </td>
+                        <td valign="top" class="idc-td-oneyear idc-right-align"
+                            id="idc-td-oneyear9945521">
+                        <span class="padding7right">
+                            24,472.00                        </span>
+                        </td>
+                    </tr>
+                    <tr  style="display:none"                              id="img_9945521">
+                        <td id="9945521" colspan="6"
+                            style="padding:0px !important; margin: 0px !important;">
+                            <img id="imgs_9945521"
+                                 src="//www.fidelityfi.idmanagedsolutions.com/charts/futuremarkets/quote.chart?ID_NOTATION=9945521&LAST=26760&DECIMAL=2&WIDTH=502"
+                                 height="207"/>
+                        </td>
+                    </tr>
+                                        <tr class="idc-row-contract" id="13368049">
+                        <td valign="top" style="width:0px;padding-right: 7px !important; margin-right: 0px;"
+                            class="idc-td-contract">
+                            <img src="//www.fidelityfi.idmanagedsolutions.com/images/open_button.png" height="12" width="12"/>
+                        </td>
+                        <td style="width:90px;" class="td-symbol">
+                            Nikkei 225 <br/>(Dollar)                        </td>
+                        <td valign="top" class="idc-td-last idc-right-align"
+                            id="idc-td-last13368049">
+                            21,735.00                            <span class="idc-changeup">
+                                (+100.00                                , +0.46%)
+                            </span>
+                        </td>
+                        <td valign="top" class="idc-td-prior idc-right-align"
+                            id="idc-td-prior13368049">
+                            21,635.00*
+                        </td>
+                        <td valign="top" class="idc-th-onemonth idc-right-align"
+                            id="idc-td-onemonth13368049">
+                            21,785.00                        </td>
+                        <td valign="top" class="idc-td-oneyear idc-right-align"
+                            id="idc-td-oneyear13368049">
+                        <span class="padding7right">
+                            22,705.00                        </span>
+                        </td>
+                    </tr>
+                    <tr  style="display:none"                              id="img_13368049">
+                        <td id="13368049" colspan="6"
+                            style="padding:0px !important; margin: 0px !important;">
+                            <img id="imgs_13368049"
+                                 src="//www.fidelityfi.idmanagedsolutions.com/charts/futuremarkets/quote.chart?ID_NOTATION=13368049&LAST=21735&DECIMAL=2&WIDTH=502"
+                                 height="207"/>
+                        </td>
+                    </tr>
+                                </tbody>
+        </table>
+    </div><!--  END idc-commoditiesStats Div-->
+    <div class="clear idc-changeDiv">
+        <div class="pull-left"><img src="//www.fidelityfi.idmanagedsolutions.com/images/green.png"/>
+            <span class="big-dot">=</span><span class="dot-text">Increase</span></div>
+        <div class="pull-left"><img src="//www.fidelityfi.idmanagedsolutions.com/images/red.png"/>
+            <span class="big-dot">=</span><span class="dot-text">Decrease</span></div>
+        <div class="pull-left"><img src="//www.fidelityfi.idmanagedsolutions.com/images/black.png"/>
+            <span class="big-dot">=</span><span class="dot-text">No Change</span></div>
+    </div>
+    <div class="clear idc-disclaimer">
+        <a href="http://personal.fidelity.com/help/research/learn_er_markets_sectors_news_analysis.shtml#whatusfuturesmarketsdataisavailable"
+           target="_blank"> What U.S. Futures Markets data is available?</a><br/>
+        <div id="footerlayout" class="disclaimerCms">
+            <span>Market data provided by&nbsp;<a href="https://www.theice.com/market-data" target="_blank" 
+style="color:#0066CC">ICE Data Services</a>.
+<a href="https://www.theice.com/market-data/disclaimer" target="_blank
+" style="color:#0066CC">ICE Limitations</a>. Powered and implemented by
+<a href="https://www.factset.com/" 
+target="_blank" style="color:#0066CC">FactSet</a>.
+<a href="https://www.factset.com/legal-statement" target="_blank
+" style="color:#0066CC">Legal Statement</a>.
+</span>         </div>
+    </div>
+</div><!--  END idc-commoditiescontent Div-->
+<!-- MODULE END (commodities module)-->
+		
+		
+	
+</div>
+
+
+<div class="mkt-news">
+<div class="mkt-news-left">
+	<div id="marketCommentary_div" class="text-block">
+		<h3>Equity Market Commentary</h3>
+		
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+	
+					<ul>
+						<li><a href="javascript:void(0)"
+							onclick="window.open('http://research2.fidelity.com/fidelity/research/reports/pdf/getReport.asp?docKey=738-fidelity_stocks_recap-1UKTAF5P5F4I22FU9ODP084VFJ')">Daily&#032;Equity&#032;Recap
+								(PDF)</a>
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<span><img style="padding-left:6px;" width="8" height="10" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/images/lock.gif" complete="complete" alt="Log in required." title="Log in required."/></span>
+ 
+ 
+ 
+
+							<ul class="source-div">
+								<li>BY <a
+									href="https://research2.fidelity.com/fidelity/markets_sectors/search.asp#firm=The%20Hightower%20Report">The&#032;Hightower&#032;Report</a></li>
+								<li><a
+									href="https://research2.fidelity.com/fidelity/markets_sectors/search.asp#marketChecked=true&market=Equity">Equity</a>
+								</li>
+								<li class="timestamp">4&#058;33&#032;pm&#032;ET&#032;06&#047;24&#047;2019</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li><p></p></li>
+					</ul>
+					<ul class="blue-bullet-list">
+						<li><a
+							href="https://research2.fidelity.com/fidelity/markets_sectors/search.asp#marketChecked=true&market=Equity&firm=All Firms&timeframe=30">View
+								more Equity Market Commentary</a></li>
+
+					</ul>
+				
+		
+	</div>
+
+	
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+	
+	<div id="latestResearchReports_div" class="text-block bottom-none">	
+			<h3>Latest Equity Research Reports</h3>
+		
+	    
+	    
+		
+			<ul>
+			
+				<li>
+					<a href="javascript:void(0)" onclick="window.open('http://research2.fidelity.com/fidelity/research/reports/pdf/getReport.asp?docKey=738-fidelity_stocks_recap-1UKTAF5P5F4I22FU9ODP084VFJ')">Daily&#032;Equity&#032;Recap</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<span><img style="padding-left:6px;" width="8" height="10" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/images/lock.gif" complete="complete" alt="Log in required." title="Log in required."/></span>
+ 
+ 
+ 
+					<div class="source-div">
+						<ul>
+						<li>BY <a href="https://research2.fidelity.com/fidelity/markets_sectors/search.asp#firm=The%20Hightower%20Report">The&#032;Hightower&#032;Report</a></li>
+						<li>
+						    <a href="https://research2.fidelity.com/fidelity/markets_sectors/search.asp#marketChecked=true&market=Equity">Equity</a>
+						</li>
+						<li class="timestamp">4&#058;33&#032;pm&#032;ET&#032;06&#047;24&#047;2019</li>
+						</ul>
+					</div>
+				</li>
+			
+				<li>
+					<a href="javascript:void(0)" onclick="window.open('http://research2.fidelity.com/fidelity/research/reports/pdf/getReport.asp?docKey=1463-MU_100_20190624-24297MU')">Stocks&#032;Edged&#032;Up&#032;Slightly&#032;On&#032;Monday&#032;Morning&#032;Ahead&#032;Of&#032;The&#032;G&#045;2&#032;Summit&#032;Later&#032;This</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<span><img style="padding-left:6px;" width="8" height="10" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/images/lock.gif" complete="complete" alt="Log in required." title="Log in required."/></span>
+ 
+ 
+ 
+					<div class="source-div">
+						<ul>
+						<li>BY <a href="https://research2.fidelity.com/fidelity/markets_sectors/search.asp#firm=Argus%20Analyst">Argus&#032;Analyst</a></li>
+						<li>
+						    <a href="https://research2.fidelity.com/fidelity/markets_sectors/search.asp#marketChecked=true&market=Equity">Equity</a>
+						</li>
+						<li class="timestamp">12&#058;24&#032;pm&#032;ET&#032;06&#047;24&#047;2019</li>
+						</ul>
+					</div>
+				</li>
+			
+				<li>
+					<a href="javascript:void(0)" onclick="window.open('http://research2.fidelity.com/fidelity/research/reports/pdf/getReport.asp?docKey=738-fidelity_stocks_weekly-4J22P9P48QFMCI2DS8EAHMA5F6')">Weekly&#032;Equity&#032;Fundamental&#032;Summary</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<span><img style="padding-left:6px;" width="8" height="10" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/images/lock.gif" complete="complete" alt="Log in required." title="Log in required."/></span>
+ 
+ 
+ 
+					<div class="source-div">
+						<ul>
+						<li>BY <a href="https://research2.fidelity.com/fidelity/markets_sectors/search.asp#firm=The%20Hightower%20Report">The&#032;Hightower&#032;Report</a></li>
+						<li>
+						    <a href="https://research2.fidelity.com/fidelity/markets_sectors/search.asp#marketChecked=true&market=Equity">Equity</a>
+						</li>
+						<li class="timestamp">11&#058;58&#032;am&#032;ET&#032;06&#047;24&#047;2019</li>
+						</ul>
+					</div>
+				</li>
+			
+			</ul>
+		 	<ul class="blue-bullet-list">
+		 	
+				<li><a href="https://research2.fidelity.com/fidelity/markets_sectors/search.asp#market=Equity">View more Equity Market Research Reports</a></li>
+			</ul>
+		 
+	   
+	   
+  </div>
+
+ </div>
+ <div class="mkt-news-right">	
+          
+    <div id="LatestNews_div" class="text-block">
+		<h3>Latest Equity News</h3>         
+		
+							
+					
+			<ul>
+				
+				
+		    	<li><a href="/eresearch/markets_sectors/news/story.jhtml?storyid=201906241647DOWJONESDJONLINE000223&provider=DOWJONES&product=DJONLINE&category=equity">U&#046;S&#046;&#032;Stocks&#032;Drift&#032;Higher&#044;&#032;Extending&#032;Gains</a>
+					<div class="source-div">
+						<ul>
+							<li>BY <a href="/eresearch/markets_sectors/news/news.jhtml?source=ON">DJ Business News</a></li>
+							
+
+
+
+
+
+
+
+
+
+
+
+	<li>
+			
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<a href="/eresearch/markets_sectors/news/news.jhtml?topic=equity">Equity</a>
+				
+			
+		
+		
+			
+		
+		
+		</li>
+
+							<li class="timestamp">
+
+
+
+
+04:47 PM ET 06/24/2019</li>
+						</ul>
+					</div>
+				</li>
+				
+				
+		    	<li><a href="/eresearch/markets_sectors/news/story.jhtml?storyid=201906241645MRKTWTCHNEWS_SVC000465&provider=MRKTWTCH&product=NEWS_SVC&category=equity">Dow&#032;ekes&#032;out&#032;gain&#032;but&#032;fresh&#032;Iran&#032;sanctions&#032;drag&#032;broader&#032;stock&#032;market&#032;lower</a>
+					<div class="source-div">
+						<ul>
+							<li>BY <a href="/eresearch/markets_sectors/news/news.jhtml?source=DM">MarketWatch</a></li>
+							
+
+
+
+
+
+
+
+
+
+
+
+	<li>
+			
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<a href="/eresearch/markets_sectors/news/news.jhtml?topic=sectorNews">Sectors</a>
+				
+			
+		
+		
+			,
+			
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<a href="/eresearch/markets_sectors/news/news.jhtml?topic=equity">Equity</a>
+				
+			
+		
+		
+			
+		
+		
+		</li>
+
+							<li class="timestamp">
+
+
+
+
+04:45 PM ET 06/24/2019</li>
+						</ul>
+					</div>
+				</li>
+				
+				
+		    	<li><a href="/eresearch/markets_sectors/news/story.jhtml?storyid=201906241644MRKTWTCHNEWS_SVC000461&provider=MRKTWTCH&product=NEWS_SVC&category=equity">Stocks&#032;end&#032;mostly&#032;lower&#032;as&#032;Iran&#032;sanctions&#032;hurt&#032;oil&#032;sector</a>
+					<div class="source-div">
+						<ul>
+							<li>BY <a href="/eresearch/markets_sectors/news/news.jhtml?source=DM">MarketWatch</a></li>
+							
+
+
+
+
+
+
+
+
+
+
+
+	<li>
+			
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<a href="/eresearch/markets_sectors/news/news.jhtml?topic=sectorNews">Sectors</a>
+				
+			
+		
+		
+			,
+			
+		
+		
+		
+		
+		
+		
+			
+				
+				
+					<a href="/eresearch/markets_sectors/news/news.jhtml?topic=equity">Equity</a>
+				
+			
+		
+		
+			
+		
+		
+		</li>
+
+							<li class="timestamp">
+
+
+
+
+04:44 PM ET 06/24/2019</li>
+						</ul>
+					</div>
+				</li>
+				
+			</ul>
+			<ul class="blue-bullet-list">
+				
+					<li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <span class="byline1"> 
+    <a href="/eresearch/gotoBL/markets_sectors/landing.jhtml" target="_top">
+    Log in for Exclusive News Sources</a></span>
+ 
+</li>
+				
+				<li><a href="/eresearch/markets_sectors/news/news.jhtml?topic=equity">View more Equity News</a></li>
+				<li><a href="/eresearch/markets_sectors/news/news.jhtml">View all News</a></li>
+			</ul>
+			
+		
+	</div>
+
+	<div class="text-block bottom-none fut_mkt_section">
+		
+			
+				
+
+
+
+
+	
+	
+	
+
+
+
+
+			
+			
+			
+			
+			
+			
+			
+		
+    </div>  
+</div>
+</div>
+</div>
+		</div>
+	</div>
+	<div class="inner-right-content">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.sector-list .more-info .sector-info tbody tr td {width:41px;}
+</style>
+
+<div class="performance-section">
+<h2>U.S. Sectors &amp; Industries Performance</h2>
+<span id="asOfDate_span" class="timestamp">AS OF 05:06 PM ET 06/24/2019</span>
+<div class="per-text">
+<a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml"><strong>Research Sectors &amp; Industries</strong></a>
+<a href="/eresearch/markets_sectors/sectors/si_weighting_recommendations.jhtml?tab=sirecommendations"><strong>View Weighting Recommendations</strong></a>
+</div>
+<div class="weight-block">
+<table class="sector-list">
+<thead>
+<tr>
+    <th scope="col" style="width:175px">Sector</th>
+    <th class="align-right" style="width:77px" colspan="2" scope="col">Last % Change</th>
+</tr>
+</thead>
+<tbody id="tbody_id">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr >
+    <th scope="row">
+        <a class="toggle" href="#"></a>
+        <div class="heading"><a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml?tab=learn&sector=50" id="50" class="heading1"><strong>Communication&#032;Services</strong></a></div>
+        <span class="byline">5 Industries</span>
+    </th>
+     <td class="sec-col"></td> 
+    
+        
+            <td id="lc50" lastChange="0&#046;11" class="change_td">0&#046;11%</td>
+        
+        
+    
+</tr>
+
+
+
+
+<tr >
+    <th scope="row">
+        <a class="toggle" href="#"></a>
+        <div class="heading"><a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml?tab=learn&sector=25" id="25" class="heading1"><strong>Consumer&#032;Discretionary</strong></a></div>
+        <span class="byline">11 Industries</span>
+    </th>
+     <td class="sec-col"></td> 
+    
+        
+            <td id="lc25" lastChange="&#045;0&#046;51" class="change_td">&#045;0&#046;51%</td>
+        
+        
+    
+</tr>
+
+
+
+
+<tr >
+    <th scope="row">
+        <a class="toggle" href="#"></a>
+        <div class="heading"><a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml?tab=learn&sector=30" id="30" class="heading1"><strong>Consumer&#032;Staples</strong></a></div>
+        <span class="byline">6 Industries</span>
+    </th>
+     <td class="sec-col"></td> 
+    
+        
+            <td id="lc30" lastChange="0&#046;27" class="change_td">0&#046;27%</td>
+        
+        
+    
+</tr>
+
+
+
+
+<tr >
+    <th scope="row">
+        <a class="toggle" href="#"></a>
+        <div class="heading"><a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml?tab=learn&sector=10" id="10" class="heading1"><strong>Energy</strong></a></div>
+        <span class="byline">2 Industries</span>
+    </th>
+     <td class="sec-col"></td> 
+    
+        
+            <td id="lc10" lastChange="&#045;0&#046;93" class="change_td">&#045;0&#046;93%</td>
+        
+        
+    
+</tr>
+
+
+
+
+<tr >
+    <th scope="row">
+        <a class="toggle" href="#"></a>
+        <div class="heading"><a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml?tab=learn&sector=40" id="40" class="heading1"><strong>Financials</strong></a></div>
+        <span class="byline">7 Industries</span>
+    </th>
+     <td class="sec-col"></td> 
+    
+        
+            <td id="lc40" lastChange="&#045;0&#046;33" class="change_td">&#045;0&#046;33%</td>
+        
+        
+    
+</tr>
+
+
+
+
+<tr >
+    <th scope="row">
+        <a class="toggle" href="#"></a>
+        <div class="heading"><a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml?tab=learn&sector=35" id="35" class="heading1"><strong>Health&#032;Care</strong></a></div>
+        <span class="byline">6 Industries</span>
+    </th>
+     <td class="sec-col"></td> 
+    
+        
+            <td id="lc35" lastChange="&#045;0&#046;50" class="change_td">&#045;0&#046;50%</td>
+        
+        
+    
+</tr>
+
+
+
+
+<tr >
+    <th scope="row">
+        <a class="toggle" href="#"></a>
+        <div class="heading"><a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml?tab=learn&sector=20" id="20" class="heading1"><strong>Industrials</strong></a></div>
+        <span class="byline">14 Industries</span>
+    </th>
+     <td class="sec-col"></td> 
+    
+        
+            <td id="lc20" lastChange="&#045;0&#046;23" class="change_td">&#045;0&#046;23%</td>
+        
+        
+    
+</tr>
+
+
+
+
+<tr >
+    <th scope="row">
+        <a class="toggle" href="#"></a>
+        <div class="heading"><a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml?tab=learn&sector=45" id="45" class="heading1"><strong>Information&#032;Technology</strong></a></div>
+        <span class="byline">6 Industries</span>
+    </th>
+     <td class="sec-col"></td> 
+    
+        
+            <td id="lc45" lastChange="0&#046;15" class="change_td">0&#046;15%</td>
+        
+        
+    
+</tr>
+
+
+
+
+<tr >
+    <th scope="row">
+        <a class="toggle" href="#"></a>
+        <div class="heading"><a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml?tab=learn&sector=15" id="15" class="heading1"><strong>Materials</strong></a></div>
+        <span class="byline">5 Industries</span>
+    </th>
+     <td class="sec-col"></td> 
+    
+        
+            <td id="lc15" lastChange="0&#046;45" class="change_td">0&#046;45%</td>
+        
+        
+    
+</tr>
+
+
+
+
+<tr >
+    <th scope="row">
+        <a class="toggle" href="#"></a>
+        <div class="heading"><a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml?tab=learn&sector=60" id="60" class="heading1"><strong>Real&#032;Estate</strong></a></div>
+        <span class="byline">2 Industries</span>
+    </th>
+     <td class="sec-col"></td> 
+    
+        
+            <td id="lc60" lastChange="&#045;0&#046;46" class="change_td">&#045;0&#046;46%</td>
+        
+        
+    
+</tr>
+
+
+
+
+<tr >
+    <th scope="row">
+        <a class="toggle" href="#"></a>
+        <div class="heading"><a href="/eresearch/markets_sectors/sectors/sectors_in_market.jhtml?tab=learn&sector=55" id="55" class="heading1"><strong>Utilities</strong></a></div>
+        <span class="byline">5 Industries</span>
+    </th>
+     <td class="sec-col"></td> 
+    
+        
+            <td id="lc55" lastChange="0&#046;02" class="change_td">0&#046;02%</td>
+        
+        
+    
+</tr>
+
+
+
+<tr style="display:none;"><td><div id="asOfData_last" style="display:none">AS OF 05:06 PM ET 06/24/2019</div></td></tr>
+
+
+</tbody>
+</table>
+ 
+</div>
+ 
+<div id="sioverlay_id" class="link">
+    <a href="javascript:void(0);">How is performance calculated?</a>
+</div>
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="sectorIndustryOverlay" class="si-popup1" style="width:483px;">
+
+		<div class="si-heading">
+			<div class="left">
+				
+			</div>
+			<div class="right">
+				<a href="javascript:void(0);" class="close-btn"> <img
+					src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/images/closex_blk_sm.gif"
+					alt="close" title="close" />
+				</a>
+			</div>
+		</div>
+		<div>
+		
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+		<!-- How is performance calculated? -->
+<p class="overviewonly">U.S. Sectors & Industries Performance is represented by the S&P 500 GICS&#174; (Global Industry Classification Standard) indices. Last % change is the nominal change in the price of the index from the previous trading day's close expressed as a percentage as of the index value at the time noted in the Date & Time field.  All dates and times are reported in ET.</p>
+<p class="sionly">Last % change is the nominal change in the price of the index from the previous trading day's close expressed as a percentage as of the index value at the time noted in the Date & Time field. All dates and times are reported in ET. Chart Performance figures may vary slightly from 1 Year % Change due to different timeframes used in chart calculations.</p>
+<p>GICS is an industry classification system developed by Standard & Poor's in collaboration with Morgan Stanley Capital International (MSCI). S&P uses GICS to determine the market segment to which a company is assigned. A company is assigned to a single GICS industry according to the definition of its principal business activity as determined by Standard & Poor's and MSCI. Revenues are a significant factor in defining principal business activity; however, earnings analysis and market perception are also important criteria for classification. There are currently 10 sectors and 68 industries.  Three of the 68 industries do not have companies represented in the S&P 500 Index; therefore, performance is not available for Marine, Transportation and Infrastructure, and Water Utilities.</p>
+<p>Standard & Poor's 500 (S&P 500) Index is an unmanaged market-weighted index of 500 of the nation's largest stocks from a broad variety of industries. The S&P 500 represents about 80% of the total market value of all stocks on the New York Stock Exchange. Market-weighted means that component stocks are weighted according to the total value of their outstanding shares.</p>
+<p>Indexes are unmanaged, statistical composites and their returns do not include payment of any sales charges or fees an investor would pay to purchase the securities they represent. Such costs would lower performance. It is not possible to invest directly in an index.</p>
+		</div>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	
+ </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="layout-footnote-region">
+	    <div class="layout-spacer-1"></div>
+        <div class="footnote">
+             
+		
+		 
+		 
+			
+			
+		  <p>*Due to contract expiration dates, there may be instances where the last-traded price for an expiring contract may be blended with the first price traded for a new contract in order to show one continuous price without expiration.</p><p>News, commentary, market data and research reports are from third-party sources unaffiliated with Fidelity and are provided for informational purposes only. Fidelity does not endorse or adopt their content. Fidelity makes no guarantees that information supplied is accurate, complete, or timely, and does not provide any warranties regarding results obtained from their use.  Fidelity does not offer futures trading.</p><div class="byline">You cannot invest directly in an index.</div><br/>
+		 
+		 
+
+</div>
+</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script type="text/javascript" src="https://www.fidelity.com/webcontent/ap101883-markets_sectors-content/19.04.0/js/embeddedquotes-config.js"></script> -->
+<!-- <script type="text/javascript" src="https://www.fidelity.com//products/embeddedquotes/js/embeddedquotes.js.shtml"></script> -->
+
+
+
+    
+     	
+    
+    
+
+
+
+	
+    
+         
+    
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+	<div class="layout-footer-region">
+	
+	
+			
+		
+		
+			
+				
+				
+				
+					
+				
+			
+
+		 	<!-- <script language="javascript" type="text/javascript">
+	var tradeUrl = 'https://oltx.fidelity.com/ftgw/fbc/oftrade/snippet/quickTradeStandAlone';
+
+	$(document).ready(function () {
+		ngttWindowLoad();
+	});
+
+	function ngttWindowLoad() {
+
+		var featureToggle = 'on';
+
+		var isBrowserCompatible = false;
+
+		var queryString = 'login=no';
+		var loggedIn = getLoggedInParam(queryString);
+		var defaultsForTicket = getDefaultParam(queryString);
+
+		// if we recognize the default param passed in as mm, we want to pass this along to
+		// trade so that client trade starts with special settings for market monitor
+		if (defaultsForTicket === 'mm') {
+			tradeUrl = tradeUrl + "?DEFAULT=mm"
+		}
+
+		// this is using the comment based html markup on next gen that sets the html class based on which version
+		// of IE the user's current browser is. lt-ie10 stands for less than IE10. So this is a good check for IE9 and older.
+		var ieVersion = getInternetExplorerVersion();
+
+		if (ieVersion == -1 || ieVersion >= 10) {
+			isBrowserCompatible = true;
+		} else {
+			isBrowserCompatible = false;
+		}
+
+		$('body').prepend('<div class="docked-top-container" style="display:none;">'
+			+ '<div class="docked-trade-ticket" id="dockedTicketContainer" role="dialog" aria-label="docked-trade-ticket"></div>'
+			+ '<div id="dockedTicketBrowserCompatability" style="display:none;">' + isBrowserCompatible + '</div>'
+			+ '<div id="dockedTicketEnabledEntitlement"  style="display:none;">true</div>'
+			+ '<div id="dockedTicketPreference"  style="display:none;">true</div>'
+			+ '<div id="dockedTicketLoggedInState"  style="display:none;">' + loggedIn + '</div>'
+			+ '<div id="ticketBootstrapped"  style="display:none;">true</div>'
+			+ '<div id="featureToggle"  style="display:none;">' + featureToggle + '</div>'
+			+ '<div class="base-popup base-modal--container base-modal--container-large terms-of-use-modal trade-ticket-modal"></div>'
+			+ '<div class="base-popup base-modal--container base-modal--container-large extended-hours-trading-modal trade-ticket-modal"></div>'
+			+ '<div class="base-popup base-modal--container base-modal--container-large select-a-fund-i-own-modal trade-ticket-modal" role="dialog" aria-labelledby="select-a-fund-i-own--header"></div>'
+			+ '<div class="base-popup base-modal--container base-modal--container-large additional-important-information-modal trade-ticket-modal" role="dialog" aria-labelledby="additional-important-information--header"></div>'
+			+ '<div class="docked-ticket-remove-popup"></div>'
+			+ '<div class="docked-additional-important-information"></div>'
+			+ '<div class="trade-container" id="tradeTicketContainer"></div>'
+			+ '</div>'
+			+ '<!-- shtml -->');
+		//insert a placeholder for the docked TT
+
+		if (isBrowserCompatible === true && featureToggle == 'on' && loggedIn == 'yes') {
+			// fetch the trade ticket
+			$("<div id='dockedComponents' style='z-index: 99999997; left: 0; width:100%; position:absolute; bottom: 0;'></div>").appendTo(".docked-top-container");
+			$.ajax({
+				type: 'GET',
+				url: tradeUrl,
+				contentType: 'text/plain',
+				xhrFields: {
+					withCredentials: true
+				},
+
+				headers: {},
+				success: function (response) {
+					$("#dockedComponents").html(response);
+				},
+				error: function (xhRequest, ErrorText, thrownError) {
+					console.log("CORS Error while importing DOCKED TT: " + xhRequest.responseText)
+				}
+			});
+		}
+	}
+
+	function getInternetExplorerVersion() {
+		var rv = -1;
+		var ua = navigator.userAgent;
+		if (navigator.appName === 'Microsoft Internet Explorer') {
+			var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+			if (re.exec(ua) != null) {
+				rv = parseFloat(RegExp.$1);
+			}
+		} else if (navigator.appName === 'Netscape') {
+			var re = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+			if (re.exec(ua) != null) {
+				rv = parseFloat(RegExp.$1);
+			}
+		}
+		return rv;
+	}
+
+	function seedATicket(jsonInput) {
+
+		//fetch the state variables
+		var browserCompatability = false;
+		var dockedEntitled = false;
+		var dockedPreference = true;
+		var loggedInState = false;
+		var featureToggle = 'off';
+		var featureToggleDiv = $('#featureToggle');
+		if (featureToggleDiv != null || featureToggleDiv != undefined) {
+			featureToggle = featureToggleDiv.html();
+		}
+		var browserCompatabilityDiv = $('#dockedTicketBrowserCompatability');
+		if (browserCompatabilityDiv != null || browserCompatabilityDiv != undefined) {
+			browserCompatability = browserCompatabilityDiv.html();
+		}
+		var dockedEntitledDiv = $('#dockedTicketEnabledEntitlement');
+		if (dockedEntitledDiv != null || dockedEntitledDiv != undefined) {
+			dockedEntitled = dockedEntitledDiv.html();
+		}
+		var dockedPreferenceDiv = $('#dockedTicketPreference');
+		if (dockedPreferenceDiv != null || dockedPreferenceDiv != undefined) {
+			dockedPreference = dockedPreferenceDiv.html();
+		}
+		var loggedInStateDiv = $('#dockedTicketLoggedInState');
+		if (loggedInStateDiv != null || loggedInStateDiv != undefined) {
+			loggedInState = loggedInStateDiv.html();
+		}
+
+		// fetch data to seed from json input
+		var seedingParams = fetchParams(jsonInput);
+
+		var securityType = seedingParams.securityType;
+
+		if (browserCompatability == 'false' || (mmDefault != "true" && (dockedEntitled == 'false' || dockedPreference == 'false' || featureToggle != 'on'))) {
+			//if not showing docked, then rebuild link
+			var url = rebuildTradeLink(jsonInput);
+			window.open(url, "_self");
+		} else if (securityType == 'H' || securityType == 'F' || securityType == 'BT' || securityType == 'MLO' || securityType == 'CT' || securityType == 'X') {
+			//if not showing docked, then rebuild link
+			var url = rebuildTradeLink(jsonInput);
+			window.open(url, "_self");
+		} else if (loggedInState == 'no' || loggedInState == 'member') {
+			// [PIATQTR-3635] set flag to open float ticket.
+			setSessionStorage("openFloatTicket", true);
+			var orderInfo = {
+				'SYMBOL': seedingParams.symbol,
+				'ORDER_TYPE': seedingParams.securityType,
+				'ORDER_ACTION': seedingParams.orderAction,
+				'LIMIT_STOP_PRICE': seedingParams.limitStopPrice,
+				'ACCOUNT': seedingParams.account,
+				'QTY': seedingParams.qty,
+				'ACCOUNT_TYPE': seedingParams.accountType
+			};
+			var tradeInfo = {
+				'orderInfo': orderInfo
+			};
+			setSessionStorage("tradeInfo", JSON.stringify(tradeInfo));
+
+			var redirectUrl = $(location).attr('href');
+			$(location).attr('href', 'https://login.fidelity.com/ftgw/Fas/Fidelity/RtlCust/Login/Init?AuthRedUrl=' + redirectUrl);
+		} else {
+			//test for float on page
+			var quickTradewrapper = $('.quick-trade-popup-wrapper');
+			if (quickTradewrapper == null || quickTradewrapper == undefined || quickTradewrapper.length == 0) {
+				//if float is not present, reopen it
+				openNewFloat(seedingParams);
+
+			} else {
+				//if floating ticket is present, attempt to seed ticket
+				populateExistingTicket(seedingParams);
+			}
+		}
+	}
+
+	function fetchParams(jsonInput) {
+
+		var symbol = "symbol";
+		var securityType = "securityType";
+		var orderAction = "orderAction";
+		var limitStopPrice = "limitStopPrice";
+		var results = {};
+
+		for (var i = 0; i < jsonInput.length; i++) {
+			var obj = jsonInput[i];
+			for (var key in obj) {
+
+				switch (key) {
+					case 'SECURITY_ID':
+						results.symbol = decodeURIComponent(obj[key]);
+						break;
+					case 'SECURITY_TYPE':
+					case 'ORDER_TYPE':
+						results.securityType = obj[key];
+						break;
+					case 'ORDER_ACTION':
+						results.orderAction = obj[key];
+						break;
+					case 'LIMIT_STOP_PRICE':
+						results.limitStopPrice = decodeURIComponent(obj[key]);
+						break;
+					case 'ACCOUNT':
+						results.account = decodeURIComponent(obj[key]);
+						break;
+					case 'QTY':
+						results.qty = decodeURIComponent(obj[key]);
+						break;
+					case 'ACCT_TYPE':
+						results.accountType = decodeURIComponent(obj[key]);
+						break;
+					default:
+						break;
+				}
+			}
+		}
+
+		return results;
+	}
+
+	function populateExistingTicket(seedingParams) {
+
+		var closeButton = $(".close-qt");
+		if (closeButton != null || closeButton != undefined) {
+			closeButton.trigger('click');
+			openNewFloat(seedingParams);
+		} else {
+
+			var symbolBox = $("#qt-symbol");
+			if (symbolBox != null || symbolBox != undefined) {
+				symbolBox.val(seedingParams.symbol);
+				symbolBox.trigger('blur');
+			}
+		}
+	}
+
+	function openNewFloat(seedingParams) {
+		var orderInfo = {
+			'SYMBOL': seedingParams.symbol,
+			'ORDER_TYPE': seedingParams.securityType,
+			'ORDER_ACTION': seedingParams.orderAction,
+			'LIMIT_STOP_PRICE': seedingParams.limitStopPrice,
+			'ACCOUNT': seedingParams.account,
+			'QTY': seedingParams.qty,
+			'ACCOUNT_TYPE': seedingParams.accountType
+		};
+		var tradeInfo = {
+			'orderInfo': orderInfo
+		};
+
+		this.tradeInfo = tradeInfo;
+
+		$(document).trigger("QUICK_TRADE", tradeInfo);
+	}
+
+	function rebuildTradeLink(jsonInput) {
+
+		var url = "https://oltx.fidelity.com/ftgw/fbc/oftrade/EntrOrder?";
+		var first = true;
+
+		for (var i = 0; i < jsonInput.length; i++) {
+			var obj = jsonInput[i];
+			for (var key in obj) {
+				var attrName = key;
+				var attrValue = obj[key];
+				if (first) {
+					url = url + attrName + "=" + attrValue;
+					first = false;
+				} else {
+					url = url + "&" + attrName + "=" + attrValue;
+				}
+			}
+		}
+
+		return url;
+	}
+
+	function setSessionStorage(key, val) {
+		if (typeof (Storage) !== "undefined") {
+			sessionStorage.setItem(key, val);
+		}
+	}
+
+	/**
+	 * Parses the logged in param after app calls this bootstrap file
+	 * @returns {string}  whether a user is logged in or not
+	 */
+	function getLoggedInParam(queryString) {
+
+		var loggedInParam = "no";
+
+		if (queryString != null && queryString != undefined && queryString != "") {
+			var queryParamSplit = queryString.split("&");
+			if (queryParamSplit.length > 0) {
+				// split the logged in param value out
+				var loggedInQuery = queryParamSplit[0].split("=");
+				if (loggedInQuery.length > 1 && loggedInQuery[0] === 'login') {
+					if (loggedInQuery[1] && (loggedInQuery[1] === 'yes' || loggedInQuery[1] === 'no' || loggedInQuery[1] === 'member')) {
+						loggedInParam = loggedInQuery[1];
+					}
+				}
+			}
+		}
+
+		return loggedInParam;
+	}
+
+	/**
+	 * Parses the default param after app calls this bootstrap file
+	 * @returns {string}  whether the calling app needs to pass in a default value for use in initialization
+	 */
+	function getDefaultParam(queryString) {
+
+		var defaultsForTicketParam = "none";
+
+		if (queryString != null && queryString != undefined && queryString != "") {
+			var queryParamSplit = queryString.split("&amp;");
+			if (queryParamSplit.length > 1) {
+				// split the default param
+				var defaultQuery = queryParamSplit[1].split("=");
+				if (defaultQuery.length > 1 && defaultQuery[0] === 'default') {
+					if (defaultQuery[1] && (defaultQuery[1] === 'mm')) {
+						defaultsForTicketParam = defaultQuery[1];
+					}
+				}
+			}
+		}
+
+		return defaultsForTicketParam;
+	}
+
+</script> -->
+		
+	
+    	<div class="layout-spacer-1"></div>
+		<div class="primary-footer">
+			<a href="https://www.fidelity.com" target="_top" title="Fidelity Logo"><img class="fid-logo" src="https://www.fidelity.com/images/FidLogoGray.gif" alt="Fidelity Investments"  title="Fidelity Investments" border="0" /></a>
+			<p class="copyright">&copy; 1998&#65293;2019 FMR LLC.</p>
+			<p class="rights">All rights reserved.</p>
+				<ul>
+					<li class="first"><a href="https://www.fidelity.com/terms-of-use" title="Terms of Use" target="_top">Terms of Use</a></li>
+					<li><a href="https://www.fidelity.com/privacy-policy" title="Privacy" target="_top">Privacy</a></li>
+					<li><a href="https://www.fidelity.com/security/overview" title="Security" target="_top">Security</a></li>
+					<li><a href="https://www.fidelity.com/sitemap/overview" title="Site Map" target="_top">Site Map</a></li>
+				</ul>
+		</div>
+	</div>
+
+
+
+<!-- <script type="text/javascript" >var _cf = _cf || []; _cf.push(['_setFsp', true]); _cf.push(['_setBm', true]); _cf.push(['_setAu', '/static/138eb63d3a81897876f6b2f40eea3ae']);</script> --><!-- <script type="text/javascript"  src="/static/138eb63d3a81897876f6b2f40eea3ae"></script> --></body>
+</html>
