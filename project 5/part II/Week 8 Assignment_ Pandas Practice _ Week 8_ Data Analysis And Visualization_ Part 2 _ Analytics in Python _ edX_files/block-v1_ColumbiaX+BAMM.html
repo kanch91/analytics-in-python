@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<!-- saved from url=(0170)https://courses.edx.org/xblock/block-v1:ColumbiaX+BAMM.101x+3T2020+type@vertical+block@c65320711d594671ac8c1f1d326edb48?show_title=0&show_bookmark_button=0&format=Project -->
+<html lang="en"><!--<![endif]--><head dir="ltr"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script src="./nr-1184.min.js"></script><script async="" src="./branch-latest.min.js"></script><script type="text/javascript" async="" src="./analytics.min(1).js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true}};(window.NREUM||(NREUM={})).loader_config={xpid:"XA4GVl5ACwAEV1JQAA==",licenseKey:"1beac94c95",applicationID:"3343327"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(23),c={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,i.indexOf("dev")!==-1&&(c.dev=!0),i.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&o.on("internal-error",function(t){r(t.stack)}),c.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:i(c||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:s.now();o("err",[t,n])}var o=t("handle"),a=t(24),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),s.xhrWrappable&&t(10),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){o("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var i=t("ee"),o=t("handle"),a=t(9),c=t(8),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;i.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),i.on(w,function(t,e){var n=t[0];n instanceof x&&o("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),i.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),i.on(g+h,function(t){o("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){c.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return i.emit(n+"start",[t,a],c),c.then(function(t){return i.emit(n+"end",[null,t],c),t},function(t){throw i.emit(n+"end",[t],c),t})})}var i=t("ee").get("fetch"),o=t(24),a=t(23);e.exports=i;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),i.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(s+"done",[null,e],n)}else i.emit(s+"done",[t],n)}))},{}],7:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],9:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(s+u,r),o.on(c+u,i)},{}],10:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function o(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(v,i,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),w=Date.now(),v={spanId:h,traceId:m,timestamp:w};return(t.sameOrigin||s(t)&&l())&&(v.traceContextParentHeader=i(h,m),v.traceContextStateHeader=o(h,w,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(v.newrelicHeader=a(h,m,w,n,r,f)),v}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",c=1,s="",f="";return i+"@nr="+o+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(c.d.tk=o),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(20),h=t(13);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],12:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function o(t,e){t.params.status=e.status;var n=w(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){o(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof v&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)})}},{}],13:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||c),"/"===i.pathname&&(r[t]=i),i}},{}],14:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(16);e.exports=r},{}],15:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(23),c=t(24),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=i(l+e,!0,"api")}),u.addPageAction=i(l+"addPageAction",!0),u.setCurrentRouteName=i(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=i(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,f.now(),!1,e])}},{}],16:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],17:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],18:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(25);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],19:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!w){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),w=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(22),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var w=!1,v=["click","keydown","mousedown","pointerdown","touchstart"];v.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],20:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<o.length;c++)i=o[c],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],21:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=s[1])}e.exports={agent:i,version:o,match:r}},{}],22:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],23:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],24:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],25:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?s(t,c,o):o()}function n(n,r,i,o){if(!l.aborted||o){t&&t(n,r,i);for(var a=e(i),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||i(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:w,listeners:m,context:e,buffer:v,abort:a,aborted:!1};return x}function o(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(23),u={},d={},l=e.exports=i();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(g,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=t(18),c=t("handle"),s=t(23),f=t("ee"),u=t(21),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},y=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:a.getLastTimestamp(),now:a,origin:v,features:{},xhrWrappable:y,userAgent:u};t(15),t(19),l[p]?(l[p]("DOMContentLoaded",o,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",i),d[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var b=0},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var i=t("ee"),o=t(24),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,i){function nrWrapper(){var r,a,c,s;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,i],c])}u(e+"start",[r,a,i],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,i,o){i||(i="");var a,c,s,f="-"===i.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+i:i,o,c))}function u(n,r,i){if(!s||e){var o=s;s=!0;try{t.emit(n,r,i,e)}catch(a){l([a,n,r,i])}s=o}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var i in t)c.call(t,i)&&(e[i]=t[i]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=i),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,12,4,3]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"1beac94c95","applicationID":"3343327","transactionName":"NQQGYUZWDUNSVUMPWQxOIkBaVBdZXFgYClsRTwBfVVkEX1JGRxUYAQ4RR0dSFFFBUxkQXwcWFxtCXgZHQAxFA1gGBBZqTFUPX1Bd","queueTime":1,"applicationTime":354,"agent":"","atts":"GUMRFw5MQUJWR0IDRRY+DkJAaABfXF1eAxRYQwpaQBoRVUJDUhVCBwVGGRZTBkBBU1QHQgcFO0JVUQVcVmlbA1EDAh1qWVIXWFxSFVwUNQACU1hSJVxSUWwFWRcTF1BrUhtAVkReA1gBBEpHUVsCRFpAUjlSAxUBRhoGPh5dV1oDRRIAB1BQaAVcUlFoCFcPBEYZFkUGQUZTRBJpAxQQXWtDGkBWaVATUxESRg8WRAZDQF9YCBsNE0laQF8GQhEaFRRTExQBRkBoFkNWRGgHUQcPEBcOFS5fSV9bCldNVEoFFB8uUVBfWRJZEQlfFX1ZF1VfFnoHVUIuNxVsF1IAbAcCOQFLQSVFRFsGZ1ZUfA9CTVRXAhoEVRAbfX8yey5NRFldXAYQdFNUDVlLQSddRlgOVRwOAEgGTFVWDQQZWwgTZVYAVxAISwAHAE0DBRQbREQHEBFQR0M8QlZQUhRTEENeF1xDF0BADBhJWgcAFltdWQQeVlJPSFkQBksXGBURVUJDUhVCPRQXUEZoClQRDAJWBlpWUQIYFRFVQkNSFUI9ABFBXFINRFpVVhJTBj4RRlFFPFZcQ1kCaQsPO1hdUwdcVkFWFFNAW0ZFRlgAVUBFaBRTExQBRkAVTxJQWVMDaQ0WClBGaA5fV0NbAxRYQwhYRxkHWlJYUAlXEhEXG1dYFkJAU0AHRAdPElxRQBAeRV9SEUVATUZWW1MGb1xBWQNEQFtGRVhWF1ZcRFpLQgwNRhkWTwFvRkVSFGkRFQVBURkEVUdpWgdYG08HVFhbEBIJBxtETgA+EUZRRTxDR1dDAxgFBBBqWVYNSR1UWwlVCRI7R1FGFlVAQlICFFhZSBdMVTxFQFNFOUUWABBQGlAGRGxbVghPTAURR1VDCl9dFA1UGFVVXAwCAVEBBAYDVwZTVFJISQ=="}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <title>
+
+ BAMM.101x Courseware | edX
+</title>
+
+
+  
+
+  <script type="text/javascript" src="./djangojs.2623d59dd64d.js"></script>
+  <script type="text/javascript" src="./ie11_find_array.bd1c6dc7a133.js"></script>
+  
+  <link rel="icon" type="image/x-icon" href="https://edx-cdn.org/v3/prod/favicon.ico">
+
+
+
+  
+  
+
+    <link href="./lms-style-vendor.a44d8153e6e2.css" rel="stylesheet" type="text/css">
+
+
+
+    
+  
+
+    <link href="./lms-main-v1.ae474364d482.css" rel="stylesheet" type="text/css">
+
+
+
+
+    
+    
+<script type="text/javascript" src="./lms-main_vendor.3c3c9a2604d6.js" charset="utf-8"></script>
+
+
+    
+    
+<script type="text/javascript" src="./lms-application.0e3fae472a20.js" charset="utf-8"></script>
+
+
+
+  
+    
+    
+    <script type="text/javascript" src="./commons.a69fce36472761125093.662aecf647bb.js"></script>
+
+
+
+  <script>
+    window.baseUrl = "https://prod\u002Dedx\u002Dedxapp\u002Dassets.edx\u002Dcdn.org/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="./require-config.38226099c6ad.js"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.d4cfaf3361fa',
+'js/views/message_banner': 'js/views/message_banner.91290dbe25ba',
+'moment': 'common/js/vendor/moment-with-locales.43ec67e44612',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.60142e6c4416',
+'js/courseware/course_info_events': 'js/courseware/course_info_events.2fc35b57627f',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'js/dateutil_factory': 'js/dateutil_factory.be68acdff619',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.d5f10bc65ed0',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.36cfa4c5d0f2',
+'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.4f58fa101744',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'hls': 'common/js/vendor/hls.8f15a0109b05'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+  
+
+  
+
+    <link href="./lms-style-course-vendor.dc9629c68006.css" rel="stylesheet" type="text/css">
+
+
+
+
+  
+
+    <link href="./lms-course.c33ffc4aff63.css" rel="stylesheet" type="text/css">
+
+
+
+
+<script type="text/javascript" src="./jquery.autocomplete.3bd10d7510d2.js" async=""></script>
+<script type="text/javascript" src="./tooltip_manager.da362490e199.js" async=""></script>
+
+<link href="./jquery.autocomplete.efeb242dd532.css" rel="preload" type="text/css">
+  <style type="text/css">
+.xblock-student_view.xblock-student_view-lti_consumer h2.problem-header{display:inline-block}.xblock-student_view.xblock-student_view-lti_consumer div.problem-progress{display:inline-block;padding-left:5px;color:#666;font-weight:100;font-size:1em}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer{margin:0 auto}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .wrapper-lti-link{font-size:14px;background-color:#f6f6f6;padding:20px}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .wrapper-lti-link .lti-link{margin-bottom:0;margin-top:20px;text-align:left}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .wrapper-lti-link .lti-link button{font-size:13px;line-height:20.72px}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .lti-modal{position:fixed;opacity:0;z-index:11000;box-sizing:border-box;margin-left:0;height:auto;padding:8px;border-radius:3px;box-shadow:0 0 5px 0 rgba(0,0,0,0.4);background:#464646;color:#3c3c3c}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .lti-modal .close-modal{display:inline-block;position:absolute;right:0px;top:0px;z-index:100;cursor:pointer;padding:10px;background-color:#fff !important;border:none;text-align:center}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .lti-modal .close-modal .fa{font:normal normal normal 14px/1 FontAwesome;font-size:inherit}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer .lti-modal .inner-wrapper{height:100%;padding:0 0 0 0}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer form.ltiLaunchForm{display:none}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer iframe.ltiLaunchFrame{width:100%;height:100%;display:block;border:0px}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer h4.problem-feedback-label{font-weight:100;font-size:1em;font-family:"Source Sans", "Open Sans", Verdana, Geneva, sans-serif, sans-serif}.xblock-student_view.xblock-student_view-lti_consumer div.lti_consumer div.problem-feedback{margin-top:5px;margin-bottom:5px}.lean-overlay{background:transparent;background-image:radial-gradient(circle at 50% 30%, rgba(0,0,0,0.4), rgba(0,0,0,0.6));display:none;height:100%;left:0;position:fixed;top:0;width:100%;z-index:100}
+
+</style>
+
+  <!--<base target="_parent">--><base href="." target="_parent">
+
+  
+
+  
+
+
+  
+
+
+<script type="application/json" id="user-metadata">
+    null
+</script>
+
+  
+
+  
+
+<script src="./1743970571.js"></script>
+
+  
+
+
+<!-- begin Segment -->
+<script type="text/javascript">
+  // Asynchronously load Segment's analytics.js library
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+  analytics.load("DxfS1h06K5HA7CZDMzmsmuni8JBLmI9u");
+  analytics.page();
+  }}();
+  // Note: user tracking moved to segment-io-footer.html
+</script>
+<!-- end Segment -->
+
+
+  <meta name="path_prefix" content="">
+  
+    <meta name="google-site-verification" content="_mipQ4AtZQDNmbtOkwehQDOgCxUUV2fb_C0b6wbiRHY">
+
+  <meta name="openedx-release-line" content="master">
+
+
+
+
+    <script type="text/javascript">
+        (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
+        branch.init('key_test_amtw27wsxA2wo5cy7NTROenatBhky0ZU');
+    </script>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://prod-edx-edxapp-assets.edx-cdn.org/static/js/dateutil_factory.be68acdff619.js?raw" src="./dateutil_factory.be68acdff619.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body class="ltr view-in-course view-courseware courseware  lang_en view-in-mfe"><div id="MathJax_Message" style="display: none;"></div>
+
+
+<div id="page-prompt"></div>
+    
+    <a class="nav-skip sr-only sr-only-focusable" href="https://courses.edx.org/xblock/block-v1:ColumbiaX+BAMM.101x+3T2020+type@vertical+block@c65320711d594671ac8c1f1d326edb48?show_title=0&amp;show_bookmark_button=0&amp;format=Project#main">Skip to main content</a>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="marketing-hero"></div>
+
+    <div class="content-wrapper main-container" id="content" dir="ltr">
+      
+
+
+
+
+
+
+
+
+<script type="text/template" id="image-modal-tpl">
+    <div class="wrapper-modal wrapper-modal-image">
+  <section class="image-link">
+    <%= smallHTML%>
+    <a href="#" class="modal-ui-icon action-fullscreen" role="button">
+      <span class="label">
+        <span class="icon fa fa-arrows-alt fa-large" aria-hidden="true"></span> <%- gettext("Fullscreen") %>
+      </span>
+    </a>
+  </section>
+
+  <section class="image-modal">
+    <section class="image-content">
+      <div class="image-wrapper">
+        <img alt="<%= largeALT %>, <%- gettext('Large') %>" src="<%= largeSRC %>" />
+      </div>
+
+      <a href="#" class="modal-ui-icon action-close" role="button">
+        <span class="label">
+          <span class="icon fa fa-remove fa-large" aria-hidden="true"></span> <%- gettext("Close") %>
+        </span>
+      </a>
+
+      <ul class="image-controls">
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-in" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-plus fa-large" aria-hidden="true"></span> <%- gettext("Zoom In") %>
+            </span>
+          </a>
+        </li>
+
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-out is-disabled" aria-disabled="true" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-minus fa-large" aria-hidden="true"></span> <%- gettext("Zoom Out") %>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
+
+</script>
+
+
+
+
+
+
+
+<div class="course-wrapper chromeless">
+  <section class="course-content" id="course-content" data-enable-completion-on-view-service="false" style="display: block; width: auto; margin: 0;">
+      <main id="main" tabindex="-1" aria-label="Content">
+        
+<div class="xblock xblock-student_view xblock-student_view-vertical xblock-initialized" data-course-id="course-v1:ColumbiaX+BAMM.101x+3T2020" data-init="VerticalStudentView" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="vertical" data-usage-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@vertical+block@c65320711d594671ac8c1f1d326edb48" data-request-token="18b0cf55396511eba1fa0e0cd0ad140b" data-graded="True" data-has-score="False">
+  
+
+
+
+
+
+
+    
+  <div class="vert-due-date">
+    <div class="localized-datetime" data-datetime="2020-12-13 23:30:00+00:00" data-string="Project due {date}" data-timezone="Asia/Kolkata">Project due Dec 14, 2020 05:00 IST</div>
+  </div>
+
+
+
+<div class="vert-mod">
+    <div class="vert vert-0" data-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@dae0aa6323d54db9b0aeb29cb74fbe45">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock xblock-initialized" data-course-id="course-v1:ColumbiaX+BAMM.101x+3T2020" data-mark-completed-on-view-after-delay="0" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@dae0aa6323d54db9b0aeb29cb74fbe45" data-request-token="18b0cf55396511eba1fa0e0cd0ad140b" data-graded="True" data-has-score="False">
+  
+  <h3><span style="color: #ff0000; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;"><strong>ACADEMIC HONESTY</strong></span></h3>
+<p style="font-size: 16px;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #000000;">As usual, the standard honor code and academic honesty policy applies. We will be using automated&nbsp;<strong>plagiarism detection</strong>&nbsp;software to ensure that only original work is given credit. Submissions isomorphic to (1) those that exist anywhere online, (2) those submitted by&nbsp;your classmates, or (3) those submitted by students in prior semesters, will be detected and considered plagiarism.</span></p>
+</div>
+
+    </div>
+    <div class="vert vert-1" data-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@198346516dbb4077a0519f06382d29ef">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock xblock-initialized" data-course-id="course-v1:ColumbiaX+BAMM.101x+3T2020" data-mark-completed-on-view-after-delay="0" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@198346516dbb4077a0519f06382d29ef" data-request-token="18b0cf55396511eba1fa0e0cd0ad140b" data-graded="True" data-has-score="False">
+  
+  <h3><span style="color: #ff0000; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;"><strong>INSTRUCTIONS</strong></span></h3>
+<p style="font-size: 16px;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;"><span style="color: #ff0000;"><span style="color: #333333;"><span style="color: #000000;">This assignment test whether you have a basic level of competency in Python. There are two parts of the assignments. The second one is optional and non-graded.&nbsp;</span></span></span></span></p>
+<p style="padding-left: 30px;"><br><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">I. Data Preprocessing (100 points)</span></p>
+<p style="padding-left: 30px;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">II. Data analysis and plotting (optional, non-graded). You don't have to submit code for this part in the Vocareum coding platform.&nbsp;</span></p>
+<p style="padding-left: 30px;"></p>
+<p style="padding-left: 30px;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">The question can be answered using materials we've covered in class and with the help of the functions listed in the Notes to the question.&nbsp;</span></p>
+</div>
+
+    </div>
+    <div class="vert vert-2" data-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@8a3564cc13db443a8abbbd70272a7883">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock xblock-initialized" data-course-id="course-v1:ColumbiaX+BAMM.101x+3T2020" data-mark-completed-on-view-after-delay="0" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@8a3564cc13db443a8abbbd70272a7883" data-request-token="18b0cf55396511eba1fa0e0cd0ad140b" data-graded="True" data-has-score="False">
+  
+  <h4><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;"><span style="color: #000000;"><strong>I. </strong></span><strong>&nbsp;</strong><span style="color: #333333;"><strong>Data Preprocessing</strong></span></span></h4>
+<p><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;"><span style="color: #333333;"><b style="color: #333333; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">This homework tests your abilities to manipulate pandas Dataframe and extract the </b><span color="#333333" style="color: #333333;"><b>information</b></span><b style="color: #333333; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">&nbsp;needed.&nbsp;</b></span></span></p>
+<p style="padding-left: 30px;">1. Read the file 311_data.csv provided to you in the StarterCode section of your workbench and store the data in a <g class="gr_ gr_24 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="24" data-gr-id="24">dataframe</g>.</p>
+<p style="padding-left: 30px;">2. Create a&nbsp;&nbsp;<g class="gr_ gr_25 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="25" data-gr-id="25">dataframe</g> containing the columns: 'Created Date','Closed Date','Borough','Descriptor','Complaint Type', 'Agency', 'Longitude', 'Latitude', 'Status'</p>
+<p style="padding-left: 30px;">3. Add the column ‘processing_time’&nbsp; (in days) to this <g class="gr_ gr_26 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="26" data-gr-id="26">dataframe</g>.&nbsp;&nbsp;</p>
+<p style="padding-left: 30px;">4. Create a new column - 'start_time_window' - that contains the hour of the day that the incident report was created</p>
+<p style="padding-left: 30px;">5. output a <g class="gr_ gr_27 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="27" data-gr-id="27">csv</g> file named output1.csv containing the <g class="gr_ gr_28 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="28" data-gr-id="28">dataframe</g>, the column should be in the order of&nbsp;<span style="font-size: 1em;">'Created Date','Closed Date','Borough','Descriptor','Complaint Type', 'Agency', 'Longitude', 'Latitude', 'Status','processing_time', 'start_time_window'.<span style="font-size: 1em;">&nbsp; (hint: use </span></span><em style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">df.to_csv('output1.csv', index = False)</em><span style="font-size: 1em;">&nbsp;to output the csv. Note, the index = False means not to write a index column.)</span></p>
+<p style="padding-left: 30px;"></p>
+<p style="padding-left: 30px;">The first few lines should look like:</p>
+<p style="padding-left: 30px;"><img height="174" width="698" src="./Screen_Shot_2019-07-30_at_3.10.17_AM.png" alt="1"></p>
+<p class="MsoNormal" style="margin: 0px; color: #222222; font-family: arial, sans-serif; font-size: 12.8px;"></p>
+<h5 style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"><span color="#000000" face="Helvetica" style="color: #000000; font-family: Helvetica;"><span style="-webkit-text-stroke-color: #000000;">Notes:</span></span></h5>
+<p><span color="#000000" face="Helvetica" style="color: #000000; font-family: Helvetica;"><span style="-webkit-text-stroke-color: #000000;">1. pandas has a function&nbsp;</span></span><span style="color: #0000ff; font-family: Helvetica; -webkit-text-stroke-color: #000000;">'to_datetime'&nbsp;</span><span style="color: #000000; font-family: Helvetica; -webkit-text-stroke-color: #000000;">which convert string series to datetime&nbsp;series</span></p>
+<p><span color="#000000" face="Helvetica" style="color: #000000; font-family: Helvetica;"><span style="-webkit-text-stroke-color: #000000;">2. to get the hour of the day, you can use<span style="color: #0000ff;">&nbsp;'apply(lambda x: x.hour)'&nbsp;</span></span></span></p>
+<p style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: normal; font-family: Helvetica; font-size: 16px; vertical-align: baseline; color: rgb(0, 0, 0); -webkit-text-stroke: rgb(0, 0, 0); min-height: 19px;"><span style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1.4em; font-family: &quot;Open Sans&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: inherit; vertical-align: baseline;"><span style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1.4em; font-family: inherit; font-size: inherit; vertical-align: baseline; color: rgb(255, 0, 0);"><strong style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.4em; font-family: inherit; font-size: inherit; vertical-align: baseline;">Bonus Points:</strong><span style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1.4em; font-family: inherit; font-size: inherit; vertical-align: baseline; color: rgb(0, 0, 0);">&nbsp;</span></span></span></p>
+<p style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: normal; font-family: Helvetica; font-size: 16px; vertical-align: baseline; color: rgb(0, 0, 0); -webkit-text-stroke: rgb(0, 0, 0); min-height: 19px;"><span style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1.4em; font-family: &quot;Open Sans&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: inherit; vertical-align: baseline;"><strong style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.4em; font-family: inherit; font-size: inherit; vertical-align: baseline; color: rgb(49, 49, 49);"><span style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.4em; font-family: inherit; font-size: inherit; vertical-align: baseline; color: rgb(0, 0, 255);"><strong style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.4em; font-family: inherit; font-size: inherit; vertical-align: baseline; color: rgb(49, 49, 49);"><span style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.4em; font-family: inherit; font-size: inherit; vertical-align: baseline; color: rgb(255, 0, 0);">Submitting this assignment&nbsp;before 12/01/2020, 23:30 UTC is eligible for bonus points (we count grades on your latest submission). Due to edX policy, all assignment grades are capped at 100%.</span></strong></span></strong></span></p>
+<p style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: normal; font-family: Helvetica; font-size: 16px; vertical-align: baseline; color: rgb(0, 0, 0); -webkit-text-stroke: rgb(0, 0, 0); min-height: 19px;"><span style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: 1.4em; font-family: &quot;Open Sans&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: inherit; vertical-align: baseline;"><strong style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.4em; font-family: inherit; font-size: inherit; vertical-align: baseline; color: rgb(49, 49, 49);"><span style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.4em; font-family: inherit; font-size: inherit; vertical-align: baseline; color: rgb(0, 0, 255);"><strong style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.4em; font-family: inherit; font-size: inherit; vertical-align: baseline; color: rgb(49, 49, 49);"><span style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.4em; font-family: inherit; font-size: inherit; vertical-align: baseline; color: rgb(255, 0, 0);"></span></strong></span></strong></span></p>
+<p style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 16px; line-height: normal; font-family: Helvetica; vertical-align: baseline; color: #000000; -webkit-text-stroke: #000000; min-height: 19px;"><strong style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: 1.4em; font-family: inherit; vertical-align: baseline; color: #313131;"><span style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: 1.4em; font-family: inherit; vertical-align: baseline; color: #0000ff;">The assignment's final due date is 12/13/2020, 23:30 UTC.&nbsp;</span></strong></p>
+<p style="text-rendering: optimizelegibility; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 16px; line-height: normal; font-family: Helvetica; vertical-align: baseline; color: #000000; -webkit-text-stroke: #000000; min-height: 19px;"></p>
+<p style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;"><span style="color: #000000; -webkit-text-stroke-color: #000000; font-size: 1em;"><span style="color: #ff0000;"><strong>What To Submit</strong></span>.&nbsp;</span><span style="font-size: 1em; -webkit-text-stroke-width: initial;">Before you submit, the&nbsp;<strong>RUN</strong>&nbsp;button on Vocareum should help you determine whether or not your program executes correctly on the platform. Submit only&nbsp;the .ipynb&nbsp;file.</span></span></p>
+<p style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"></p>
+<p style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;">There are some instructions for you to submit&nbsp;the assignment:</p>
+<ol>
+<li>You only need to write your&nbsp;code in the comment area&nbsp;<strong>"Your Code Here"</strong>.</li>
+<li><strong>Do not upload your own file.&nbsp;</strong>Please make the necessary changes in the Jupyter&nbsp;notebook file already present in the server.</li>
+<li>Please note, there are several cells in the Assignment Jupyter notebook that are empty and&nbsp;<g class="gr_ gr_99 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="99" data-gr-id="99">read-only</g>.&nbsp;<strong>Do not attempt to remove them or edit them.</strong>&nbsp;They are used in grading your notebook. Doing so might lead to 0 points.</li>
+</ol>
+<p style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"></p>
+<p style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px; text-align: center;"></p>
+</div>
+
+    </div>
+    <div class="vert vert-3" data-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@563a4c848e094996a4328441582beead">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock xblock-initialized" data-course-id="course-v1:ColumbiaX+BAMM.101x+3T2020" data-mark-completed-on-view-after-delay="0" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@563a4c848e094996a4328441582beead" data-request-token="18b0cf55396511eba1fa0e0cd0ad140b" data-graded="True" data-has-score="False">
+  
+  <h4><strong><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; color: #000000;">II.<span style="font-size: 16px; text-transform: none;">&nbsp;Data analysis and plotting&nbsp;(<span style="color: #0000ff;">Optional section, Non-graded</span>)</span></span></strong></h4>
+<p>This part is to check for yourself how to use pandas for plotting data from the&nbsp;<g class="gr_ gr_37 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar only-ins replaceWithoutSep" id="37" data-gr-id="37">same</g> data used for part 1. You are not expected to submit code for this part. For each question below, there is a corresponding solution graph. You can refer the graph you get to this image to check your solution.</p>
+<p>You can use Jupyter notebook or any python IDE on your local machine to write code to output these graphs.</p>
+<p><span style="color: #222222; font-family: arial, sans-serif; font-size: large;">5.&nbsp;Plot a bar graph of the 10 most&nbsp;frequent complaints. O</span><span style="color: #222222; font-family: arial, sans-serif; font-size: large;">utput a png file named&nbsp;</span><span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;">1.png,&nbsp;</span><span style="color: #222222; font-family: arial, sans-serif; font-size: large;"><span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;"><span style="color: #000000;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">a correct graph should look like this&nbsp;</span></span></span></span><span style="color: #000000; font-size: large;">(</span><span style="color: #9cdcfe;">figsize</span>=(<span color="#b5cea8" style="color: #b5cea8;">8.5,.5</span>))&nbsp;<span style="color: #000000; font-size: large;">:</span></p>
+<p><img height="384" width="500" src="./Screen_Shot_2019-07-30_at_2.20.15_AM.png" alt="5"></p>
+<p><span style="color: #222222; font-family: arial, sans-serif; font-size: large;">6. Group the data by hour of the&nbsp;<g class="gr_ gr_38 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar only-ins replaceWithoutSep" id="38" data-gr-id="38">day</g> and plot the mean processing time for each hourly bucket on a graph, output a png file named <span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;">2.png<span style="color: #000000;">,&nbsp;<span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">a correct graph should look like this&nbsp;</span></span></span></span><span style="color: #000000; font-size: large;">(</span><span style="color: #9cdcfe;">figsize</span>=(<span style="color: #b5cea8;" color="#b5cea8">8</span>,<span style="color: #b5cea8;" color="#b5cea8">5.5</span>))&nbsp;<span style="color: #000000; font-size: large;">:</span></p>
+<p><img width="500" height="375" alt="" src="./1.png" type="saveimage" isimmediatepropagationstopped="function t(){return!1}" ispropagationstopped="function t(){return!1}" isdefaultprevented="function t(){return!1}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" stoppropagation="function (){r.isPropagationStopped=n}" preventdefault="function (){r.isDefaultPrevented=n}" target="[object Object]"><br style="color: #222222; font-family: arial, sans-serif; font-size: large;"><br></p>
+<p><span style="color: #222222; font-family: arial, sans-serif; font-size: large;">7. </span><span style="color: #000000; font-size: large;">Using a scatter plot, map all the&nbsp;longitudes and the latitudes on a map.&nbsp;</span><span style="color: #222222; font-family: arial, sans-serif; font-size: large;">output a png file named<span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;">&nbsp;3.png,&nbsp;</span></span><span style="color: #000000; font-size: large;">a correct graph should look like this&nbsp;</span><span style="color: #222222; font-family: arial, sans-serif; font-size: large;"><span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;"><span style="color: #000000;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">&nbsp;</span></span></span></span><span style="color: #000000; font-size: large;">(</span><span style="color: #9cdcfe;">figsize</span>=(<span color="#b5cea8" style="color: #b5cea8;">8</span>,<span color="#b5cea8" style="color: #b5cea8;">5.5</span>))&nbsp;</p>
+<p><img height="419" width="966" src="./Screen_Shot_2019-07-30_at_2.19.52_AM.png" alt="7"><br style="color: #222222; font-family: arial, sans-serif; font-size: large;"><span style="color: #222222; font-family: arial, sans-serif; font-size: large;">8. Group the data by both <g class="gr_ gr_40 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="40" data-gr-id="40">agencies</g> as well as <g class="gr_ gr_39 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar only-ins doubleReplace replaceWithoutSep" id="39" data-gr-id="39">boroughs</g> and plot the mean processing time for <g class="gr_ gr_30 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="30" data-gr-id="30">each agency</g> in each borough. You should create five charts, one for each borough, with bars of size processing time for each agency, output a png file named&nbsp;<span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;">4.png,&nbsp;</span></span><span style="color: #000000; font-size: large;">a correct graph should look like this&nbsp;</span><span style="color: #222222; font-family: arial, sans-serif; font-size: large;"><span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;"><span style="color: #000000;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">&nbsp;</span></span></span></span><span style="color: #000000; font-size: large;">(</span><span style="color: #9cdcfe;">figsize</span>=(<span style="color: #b5cea8;" color="#b5cea8">12</span>,<span style="color: #b5cea8;" color="#b5cea8">12</span>))&nbsp;<span style="color: #000000; font-size: large;">:</span></p>
+<p><span style="color: #000000; font-size: large;"><img width="826" height="827" alt="" src="./4.png" type="saveimage" isimmediatepropagationstopped="function t(){return!1}" ispropagationstopped="function t(){return!1}" isdefaultprevented="function t(){return!1}" stopimmediatepropagation="function (){r.isImmediatePropagationStopped=n}" stoppropagation="function (){r.isPropagationStopped=n}" preventdefault="function (){r.isDefaultPrevented=n}" target="[object Object]"></span></p>
+<p><span style="color: #222222; font-family: arial, sans-serif; font-size: large;">9.</span><span style="color: #000000; font-size: large;">&nbsp;Group the boroughs by different statuses and&nbsp;</span><span style="color: #222222; font-family: arial, sans-serif; font-size: large;">output a png file named <span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;">5.png,&nbsp;</span></span><span style="color: #000000; font-size: large;">a correct graph should look like this&nbsp;</span><span style="color: #222222; font-family: arial, sans-serif; font-size: large;"><span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;"><span style="color: #000000;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">&nbsp;</span></span></span></span><span style="color: #9cdcfe;">figsize</span>=(<span color="#b5cea8" style="color: #b5cea8;">8</span>,<span color="#b5cea8" style="color: #b5cea8;">5.5</span>)):</p>
+<p><img height="430" width="795" src="./Screen_Shot_2019-07-30_at_2.19.31_AM.png" alt="9"></p>
+<p class="MsoNormal" style="margin: 0px; color: #222222; font-family: arial, sans-serif; font-size: 12.8px;"></p>
+<p style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"><span style="color: #000000; font-family: Helvetica;" face="Helvetica" color="#000000"><span style="-webkit-text-stroke-color: #000000;">&nbsp;10.&nbsp;</span></span><span style="color: #222222; font-family: arial, sans-serif; font-size: large;">Build a graph of the number of incidents by months. Start by creating a new data field 'yyyymm' using&nbsp;datetime.strftime instance method. Then group by 'agency' and '</span><span style="color: #222222; font-family: arial, sans-serif; font-size: large;">yyyymm'.&nbsp;</span></p>
+<p style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"><span style="color: #222222; font-family: arial, sans-serif; font-size: large;"><span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;"><span style="color: #000000;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;"><span style="color: #222222; font-family: arial, sans-serif; font-size: large;"><g class="gr_ gr_39 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar only-ins doubleReplace replaceWithoutSep" data-gr-id="39">O</g>utput a png file named <span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;">6.png,&nbsp;</span></span><span style="color: #000000; font-size: large;">a correct graph should look like this&nbsp;</span><span style="color: #222222; font-family: arial, sans-serif; font-size: large;"><span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;"><span style="color: #000000;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">&nbsp;</span></span></span></span></span></span></span></span><span style="color: #222222; font-family: arial, sans-serif; font-size: large;"><span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;"><span style="color: #000000;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">(</span></span></span></span><span style="color: #000000; font-size: large;"><span style="color: #9cdcfe;">figsize</span><span style="color: #3c3c3c; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; font-size: 16px;">=(</span><span color="#b5cea8" style="color: #b5cea8;">8</span><span style="color: #3c3c3c; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; font-size: 16px;">,</span><span color="#b5cea8" style="color: #b5cea8;">5.5</span><span style="color: #3c3c3c; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; font-size: 16px;">)):</span></span></p>
+<p style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"><span style="color: #000000; font-size: large;"><span style="color: #3c3c3c; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif; font-size: 16px;"><img height="500" width="500" src="./Screen_Shot_2019-07-20_at_10.57.16_PM.png" alt="7.png"></span></span></p>
+<h5 style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"></h5>
+<h5 style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"></h5>
+<h5 style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"><span style="color: #000000; font-family: Helvetica;" face="Helvetica" color="#000000"><span style="-webkit-text-stroke-color: #000000;">Notes:</span></span></h5>
+<p>1. use of&nbsp;<span style="font-family: &#39;courier new&#39;, courier; color: #0000ff;"><g class="gr_ gr_32 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="32" data-gr-id="32">groupby</g>()</span>, <span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;">&nbsp;<g class="gr_ gr_33 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" id="33" data-gr-id="33">agg</g>()</span> and &nbsp;<span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;">sort_values() </span>is necessary here<br>2. use of <span color="#0000ff" face="courier new, courier" style="color: #0000ff; font-family: &#39;courier new&#39;, courier;">unstack()&nbsp;</span>is necessary for parts 10</p>
+<p style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"><span style="color: #000000; font-family: &#39;book antiqua&#39;, palatino; -webkit-text-stroke-color: #000000; font-size: 1em;"><span style="color: #ff0000; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;"><strong>What To Submit</strong></span>. <span style="color: #0000ff; font-family: &#39;courier new&#39;, courier;"><span style="color: #000000; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">You don't need to submit anything for this part.</span></span></span></p>
+<p style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px;"></p>
+<p style="margin: 0px; font-size: 16px; line-height: normal; font-family: Helvetica; color: #000000; -webkit-text-stroke-color: #000000; -webkit-text-stroke-width: initial; min-height: 19px; text-align: center;">&nbsp;</p>
+</div>
+
+    </div>
+    <div class="vert vert-4" data-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@e32ff8c77a54457b88271fc091648f22">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock xblock-initialized" data-course-id="course-v1:ColumbiaX+BAMM.101x+3T2020" data-mark-completed-on-view-after-delay="0" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@e32ff8c77a54457b88271fc091648f22" data-request-token="18b0cf55396511eba1fa0e0cd0ad140b" data-graded="True" data-has-score="False">
+  
+  <h3><span style="color: #ff0000; font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;"><strong>USE OF VOCAREUM</strong></span></h3>
+<p style="font-size: 16px;"></p>
+<p style="font-size: 16px;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">This assignment uses Vocareum for submission and grading. Vocareum comes equipped with an editing environment that you may use to do your development work. You are&nbsp;<strong>NOT</strong>&nbsp;required to use the editor. In particular, you are free to choose your favorite editor / IDE to do your development work on. When you are done with your work, you can simply upload your files onto Vocareum for&nbsp;submission and grading.</span></p>
+<p style="font-size: 16px;"><span style="font-family: &#39;Open Sans&#39;, Verdana, Arial, Helvetica, sans-serif;">However, your assignments will be graded on the platform, so you&nbsp;<strong>MUST</strong>&nbsp;make sure that your code executes without error on the platform. In particular, we do not recommend using any third-party libraries and packages beyond&nbsp;<strong>numpy</strong>,&nbsp;<strong>matplotlib</strong>, and&nbsp;<strong>scikit-learn</strong>. We do not guarantee that they will work on the platform, even if they work on your personal computer. For the purposes of this project, the standard Python library and the aforementioned packages should be more than sufficient.</span></p>
+</div>
+
+    </div>
+    <div class="vert vert-5" data-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@lti_consumer+block@805e1ec398974b51a980ef8ded982dd9">
+        
+<div class="xblock xblock-student_view xblock-student_view-lti_consumer xblock-initialized" data-course-id="course-v1:ColumbiaX+BAMM.101x+3T2020" data-init="LtiConsumerXBlock" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="lti_consumer" data-usage-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@lti_consumer+block@805e1ec398974b51a980ef8ded982dd9" data-request-token="18b0cf55396511eba1fa0e0cd0ad140b" data-graded="True" data-has-score="True">
+  <h2 class="problem-header">
+    Pandas Practice (External resource)
+</h2>
+
+    <div class="problem-progress">
+            (100.0 points possible)
+    </div>
+
+<div id="805e1ec398974b51a980ef8ded982dd9" class="lti_consumer lti-consumer-container" data-ask-to-send-username="False" data-ask-to-send-email="True">
+
+        <section class="wrapper-lti-link">
+                <div class="lti-description">Your email address will be used to identify your submission entry.</div>
+            <p class="lti-link external">
+                    <button class="btn btn-pl-primary btn-base btn-lti-new-window" data-target="/courses/course-v1:ColumbiaX+BAMM.101x+3T2020/xblock/block-v1:ColumbiaX+BAMM.101x+3T2020+type@lti_consumer+block@805e1ec398974b51a980ef8ded982dd9/handler/lti_launch_handler">
+                        Launch Project <i class="icon fa fa-external-link"></i>
+                    </button>
+            </p>
+        </section>
+
+
+</div>
+
+</div>
+
+    </div>
+    <div class="vert vert-6" data-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@1b9e6b4ddb354de8b572cf4a4d060338">
+        
+<div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlBlock xblock-initialized" data-course-id="course-v1:ColumbiaX+BAMM.101x+3T2020" data-mark-completed-on-view-after-delay="0" data-init="XBlockToXModuleShim" data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="html" data-usage-id="block-v1:ColumbiaX+BAMM.101x+3T2020+type@html+block@1b9e6b4ddb354de8b572cf4a4d060338" data-request-token="18b0cf55396511eba1fa0e0cd0ad140b" data-graded="True" data-has-score="False">
+  
+  <script src="./SRLUICourseInfo.js”" onloadeddata="“”"></script>
+<script src="./sensor.js”" onloadeddata="“”"></script>
+</div>
+
+    </div>
+</div>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['https://prod\u002Dedx\u002Dedxapp\u002Dassets.edx\u002Dcdn.org/static/js/dateutil_factory.be68acdff619.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform('.localized-datetime');
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+<script>
+    function emit_event(message) {
+        parent.postMessage(message, '*');
+    }
+</script>
+
+</div>
+
+      </main>
+  </section>
+</div>
+
+<script type="text/javascript">
+  (function() {
+    // If this view is rendered in an iframe within the learning microfrontend app
+    // it will report the height of its contents to the parent window when the
+    // document loads, window resizes, or DOM mutates.
+    if (window !== window.parent) {
+      document.body.className += ' view-in-mfe';
+      var lastHeight = window.offsetHeight;
+      var lastWidth = window.offsetWidth;
+      var contentElement = document.getElementById('content');
+
+      function dispatchResizeMessage(event) {
+        // Note: event is actually an Array of MutationRecord objects
+        // when fired from the MutationObserver
+        var eventType = event.type || 'mutate';
+        var newHeight = contentElement.offsetHeight;
+        var newWidth = contentElement.offsetWidth;
+
+        if (eventType !== 'load' && newWidth === lastWidth && newHeight === lastHeight) {
+          return;
+        }
+
+        window.parent.postMessage({
+            type: 'plugin.resize',
+            payload: {
+              width: newWidth,
+              height: newHeight,
+            }
+          }, document.referrer
+        );
+
+        lastHeight = newHeight;
+        lastWidth = newWidth;
+
+        // Within the learning microfrontend the iframe resizes to match the
+        // height of this document and it should never scroll. It does scroll
+        // ocassionally when javascript is used to focus elements on the page
+        // before the parent iframe has been resized to match the content
+        // height. This window.scrollTo is an attempt to keep the content at the
+        // top of the page. See TNL-7094
+        window.scrollTo(0, 0);
+      }
+
+      // Create an observer instance linked to the callback function
+      const observer = new MutationObserver(dispatchResizeMessage);
+
+      // Start observing the target node for configured mutations
+      observer.observe(document.body, { attributes: true, childList: true, subtree: true });
+
+      window.addEventListener('load', dispatchResizeMessage);
+      window.addEventListener('resize', dispatchResizeMessage);
+    }
+  }());
+</script>
+
+      
+    </div>
+
+
+
+  
+  
+  <script type="text/javascript" src="./jquery.scrollTo.525edcc52fe8.js" async=""></script>
+  <script type="text/javascript" src="./jquery.flot.d3d45ff0c6a8.js" async=""></script>
+
+  
+    
+<script type="text/javascript" src="./lms-courseware.515d666a83a0.js" charset="utf-8"></script>
+
+
+
+  
+
+
+
+
+<script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: {CHTMLpreview: false}
+    };
+</script>
+
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+
+<script type="text/javascript">
+    // Activating Mathjax accessibility files
+    window.MathJax = {
+        menuSettings: {
+            collapsible: true,
+            autocollapse: false,
+            explorer: true
+        }
+    };
+</script>
+
+<!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+<script type="text/javascript" src="./MathJax.js"></script>
+
+
+  <script type="text/javascript">
+    var $$course_id = "course\u002Dv1:ColumbiaX+BAMM.101x+3T2020";
+  </script>
+
+<script src="./HtmlBlockPreview.03f9c1403f1a2d5dafb3.511ca7242a54.js" type="application/javascript"></script>
+<script src="./XModuleShim.7d541d71536fa73c719f.edc6eb43de19.js" type="application/javascript"></script>
+<script>
+function LtiConsumerXBlock(runtime, element) {
+    $(function ($) {
+        // Adapted from leanModal v1.1 by Ray Stone - http://finelysliced.com.au
+        // Dual licensed under the MIT and GPL
+        // Renamed leanModal to iframeModal to avoid clash with platform-provided leanModal
+        // which removes the href attribute from iframe elements upon modal closing
+        $.fn.extend({
+            iframeModal: function (options) {
+                var $trigger = $(this);
+                var modal_id = $trigger.data("target");
+                var defaults = {top: 100, overlay: 0.5, closeButton: null};
+                var overlay_id = (modal_id + '_lean-overlay').replace('#', '');
+                var overlay = $("<div id='" + overlay_id + "' class='lean-overlay'></div>");
+                $("body").append(overlay);
+                options = $.extend(defaults, options);
+                return this.each(function () {
+                    var o = options;
+                    $(this).click(function (e) {
+                        var $modal = $(modal_id);
+                        // If we are already in an iframe, skip creation of the modal, since
+                        // it won't look good, anyway. Instead, we post a message to the parent
+                        // window, requesting creation of a modal there.
+                        // This is used by the courseware microfrontend.
+                        if (window !== window.parent) {
+                            window.parent.postMessage(
+                                {
+                                    'type': 'plugin.modal',
+                                    'payload': {
+                                        'url': window.location.origin + $modal.data('launch-url'),
+                                        'title': $modal.find('iframe').attr('title'),
+                                        'width': $modal.data('width')
+                                    }
+                                },
+                                document.referrer
+                            );
+                            return;
+                        }
+                        // Set iframe src attribute to launch LTI provider
+                        $modal.find('iframe').attr('src', $modal.data('launch-url'));
+                        $("#" + overlay_id).click(function () {
+                            close_modal(modal_id)
+                        });
+                        $(o.closeButton).click(function () {
+                            close_modal(modal_id)
+                        });
+                        var modal_height = $(modal_id).outerHeight();
+                        var modal_width = $(modal_id).outerWidth();
+                        $("#" + overlay_id).css({"display": "block", opacity: 0});
+                        $("#" + overlay_id).fadeTo(200, o.overlay);
+                        $(modal_id).css({
+                            "display": "block"
+                        });
+                        $(modal_id).fadeTo(200, 1);
+                        $(modal_id).attr('aria-hidden', false);
+                        $('body').css('overflow', 'hidden');
+
+                        e.preventDefault();
+
+                        /* Manage focus for modal dialog */
+                        /* Set focus on close button */
+                        $(o.closeButton).focus();
+
+                        /* Redirect close button to iframe */
+                        $(o.closeButton).on('keydown', function (e) {
+                           if (e.which === 9) {
+                               e.preventDefault();
+                               // This is a workaround due to Firefox triggering focus calls oddly.
+                               setTimeout(function () {
+                                   $modal.find('iframe')[0].contentWindow.focus();
+                               }, 1);
+                           }
+                        });
+
+                        /* Redirect non-iframe tab to close button */
+                        var $inputs = $('select, input, textarea, button, a').filter(':visible').not(o.closeButton);
+                        $inputs.on('focus', function(e) {
+                            e.preventDefault();
+                            $(options.closeButton).focus();
+                        });
+                    });
+                });
+                function close_modal(modal_id) {
+                    var $modal = $(modal_id);
+                    $('select, input, textarea, button, a').off('focus');
+                    $("#" + overlay_id).fadeOut(200);
+                    $modal.css({"display": "none"});
+                    $modal.attr('aria-hidden', true);
+                    $modal.find('iframe').attr('src', '');
+                    $('body').css('overflow', 'auto');
+                    $trigger.focus();
+                }
+            }
+        });
+
+        var $element = $(element);
+        var $ltiContainer = $element.find('.lti-consumer-container');
+        var askToSendUsername = $ltiContainer.data('ask-to-send-username') == 'True';
+        var askToSendEmail = $ltiContainer.data('ask-to-send-email') == 'True';
+
+        // Apply click handler to modal launch button
+        $element.find('.btn-lti-modal').iframeModal({top: 200, closeButton: '.close-modal'});
+
+        // Apply click handler to new window launch button
+        $element.find('.btn-lti-new-window').click(function(){
+            var launch = true;
+
+            // If this instance is configured to require username and/or email, ask user if it is okay to send them
+            // Do not launch if it is not okay
+            if(askToSendUsername && askToSendEmail) {
+                launch = confirm(gettext("Click OK to have your username and e-mail address sent to a 3rd party application.\n\nClick Cancel to return to this page without sending your information."));
+            } else if (askToSendUsername) {
+                launch = confirm(gettext("Click OK to have your username sent to a 3rd party application.\n\nClick Cancel to return to this page without sending your information."));
+            } else if (askToSendEmail) {
+                launch = confirm(gettext("Click OK to have your e-mail address sent to a 3rd party application.\n\nClick Cancel to return to this page without sending your information."));
+            }
+
+            if (launch) {
+                window.open($(this).data('target'));
+            }
+        });
+    });
+}
+
+</script>
+<script src="./VerticalStudentView.a1cd89253468e510325d.45b232b5a166.js" type="application/javascript"></script>
+
+
+
+  
+
+
+    <!-- begin segment footer -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            analytics.identify(
+                "5008757",
+                {
+                    email: "rjain1998.rj@gmail.com",
+                    username: "rjain1998rj"
+                },
+                {
+                    integrations: {
+                        // Disable MailChimp because we don't want to update the user's email
+                        // and username in MailChimp on every page load. We only need to capture
+                        // this data on registration/activation.
+                        MailChimp: false
+                    }
+                }
+            );
+        });
+    </script>
+    <!-- end segment footer -->
+
+  <script type="text/javascript" src="./noreferrer.aa62a3e70ffa.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./navigation.08930e16ab3d.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./header.309a1243e175.js"></script>
+  
+  <script type="text/javascript" src="./jquery_extend_patch.54dddef28d15.js"></script>
+
+
+
+
+<div id="reader-feedback" class="sr" aria-live="polite"></div><div class="tooltip" style="display: none; opacity: 0;"></div><div id="undefined_lean-overlay" class="lean-overlay"></div></body></html>
