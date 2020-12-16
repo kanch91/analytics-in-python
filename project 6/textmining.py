@@ -6,7 +6,7 @@
 # <li>Do not upload your own file. Please make the necessary changes in the Jupyter notebook file already present in the server.</li>
 # <li>Please note, there are several cells in the Assignment Jupyter notebook that are empty and read only. Do not attempt to remove them or   edit them. They are used in grading your notebook. Doing so might lead to 0 points.</li>
 
-# In[ ]:
+# In[2]:
 
 
 import nltk
@@ -22,7 +22,7 @@ from gensim.similarities.docsim import Similarity
 
 # # Question 1
 
-# In[ ]:
+# In[3]:
 
 
 """
@@ -81,7 +81,7 @@ filenames
 
 # # Question 2
 
-# In[154]:
+# In[9]:
 
 
 """
@@ -104,7 +104,7 @@ def get_text(file):
     soup = BeautifulSoup(f.read(),'lxml')
     text_string = ''
     for each in soup.find_all('p'):
-        text_string = each.get_text()
+        text_string += each.get_text()
     return text_string
 
 # Once done, try this:
@@ -113,7 +113,7 @@ get_text("Philosophers/Acrion.html")
 
 # # Question 3
 
-# In[156]:
+# In[10]:
 
 
 """
@@ -146,7 +146,6 @@ def run(filenames):
     doc_list = []
     all_text = ''
     documents = []
-    STOPWORDS = ''
     for i in filenames:
         doc_list.append(i[1])
         all_text = all_text + get_text(i[1])
@@ -175,7 +174,7 @@ def run(filenames):
         authors = doc_list[documents.index(doc)].replace('Philosophers/','').replace('.html','') #Phil of each for loop
         similar_authors = doc_list[similar[0]].replace('Philosophers/','').replace('.html','') #Similar phil
         combined = (authors, similar_authors) #tuple
-        #print(combined)
+        print(combined)
         final_list.append(combined) #Adding tuple to the list
         i = i + 1
         
