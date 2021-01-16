@@ -1,5 +1,5 @@
 # Analytics in Python
- All the projects in the BAMM101 (Analytics in Python) MicroMasters of Columbia on edX
+ All the projects and the notes for each unit in the BAMM101 (Analytics in Python) MicroMasters of Columbia on edX
 
 
 
